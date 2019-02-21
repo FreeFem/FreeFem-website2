@@ -1,3 +1,6 @@
+/** IMPORT **/
+@import "media.css";
+
 /** GLOBAL **/
 html {
     width: 100%;
@@ -18,7 +21,7 @@ body {
 }
 
 body > section {
-    border: 2px solid #EFEFEF;
+    border-bottom: 2px solid #EFEFEF;
 }
 
 a {
@@ -34,6 +37,8 @@ header {
     background-color: #FFF;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
+    border-bottom: 2px solid #EFEFEF;
 }
 
 header svg {
@@ -64,25 +69,34 @@ nav a {
 #demo {
     display: flex;
     flex-direction: row;
+    border: 2px solid #EFEFEF;
+    width: 70%;
 }
 
 #code {
     background-color: #EFEFEF;
-    width: 300px;                     /** take off **/
-    min-height: 100%;
+    height: 500px;
+    overflow-y: auto;
+    padding: 10px;
 }
 
 #blank {
     background-color: #FFF;
-    border: 2px solid #EFEFEF;
-    width: 700px;                     /** take off **/
-    min-height: 100%;
+    width: 520px;                     /** take off **/
 }
 
 #intro {
     font-size: 25px;
     padding-left: 60px;
     align-self: center;
+    height: 500px;
+    width: 30%;
+    text-align: justify;
+}
+
+#intro h1 {
+  padding: 0;
+  margin: 0;
 }
 
 /** ASIDE **/
@@ -95,6 +109,7 @@ aside {
     color: #00007F;
     text-align: center;
     min-width: 100%;
+    border-bottom: 2px solid #EFEFEF;
 }
 
 aside i {
@@ -229,14 +244,26 @@ aside i {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 60px;
+    text-align: center;
 }
 
 /** FOOTER **/
 footer {
     display: flex;
     justify-content: space-evenly;
+    min-height: 75px;
 }
 
 footer i {
     color: #FF699B;
+}
+
+footer svg {
+  height: 40px;
+  width: 40px;
+  align-self: center;
+}
+
+footer p {
+  align-self: center;
 }
