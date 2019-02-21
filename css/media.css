@@ -1,0 +1,18 @@
+/** FOR TABLETS **/
+@media only screen and (max-width:800px) {
+  #main {
+    flex-direction: column !important;
+  }
+  #intro {
+    order: 1;
+  }
+  #demo {
+    order: 2;
+  }
+  
+}
+
+/** FOR MOBILE PHONES **/
+@media only screen and (max-width:500px) {
+
+}
