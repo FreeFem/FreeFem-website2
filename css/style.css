@@ -18,6 +18,7 @@ body {
     font-family: 'Roboto', sans-serif;
     align-items: stretch;
     color: #444;
+    position: relative;
 }
 
 body > section {

@@ -5,14 +5,44 @@
   }
   #intro {
     order: 1;
+    width: 100% !important;
+    height: unset !important;
+    margin-bottom: 60px !important;
+    padding-left: 0 !important;
   }
   #demo {
     order: 2;
+    width: 100% !important;
   }
-  
+  #articles {
+    display: block !important;
+  }
+  #articles article {
+    margin-bottom: 30px !important;
+  }
+  #artFirst, #artSecond {
+    margin-right: 0 !important;
+  }
 }
 
 /** FOR MOBILE PHONES **/
 @media only screen and (max-width:500px) {
-
+  .top-nav {
+    width: 0;
+    overflow: hidden;
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    background-color: #FFF;
+    border-bottom: 2px solid #EFEFEF;;
+  }
+  .top-nav a {
+    text-align: left !important;
+    margin-left: 60px;
+    padding-bottom: 20px;
+  }
+  .top-nav a.icon {
+    float: right;
+    display: block;
+  }
 }
