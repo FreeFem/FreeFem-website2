@@ -1,6 +1,5 @@
 /** GLOBAL **/
 html {
-    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -86,12 +85,6 @@ nav a {
     align-self: center;
 }
 
-/** EMPTY BLOC**/
-#empty {
-    text-align: center;
-    padding: 100px;
-}
-
 /** ASIDE **/
 aside {
     display: flex;
@@ -101,6 +94,7 @@ aside {
     font-size: 20px;
     color: #00007F;
     text-align: center;
+    min-width: 100%;
 }
 
 aside i {
@@ -114,6 +108,12 @@ aside i {
     background-color: #0000FF;
     padding: 10px 30px;
     font-size: 25px;
+}
+
+/** EMPTY BLOC**/
+#empty {
+    text-align: center;
+    padding: 100px;
 }
 
 /** ARTICLES **/
@@ -140,7 +140,7 @@ aside i {
 
 #artFirst {
     grid-row: 2;
-    grid-column: 1/2;   
+    grid-column: 1/2;
     margin-right: 40px;
 }
 
