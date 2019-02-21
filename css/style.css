@@ -27,8 +27,6 @@ a {
     color: #00007F;
 }
 
-
-
 /** HEADER **/
 header {
     min-height: 75px;
@@ -59,8 +57,7 @@ nav a {
     display: flex;
     flex-direction: row;
     background-color: #F7F7F9;
-    height: 480px; /** enlever **/
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     padding: 60px;
 }
@@ -68,22 +65,22 @@ nav a {
 #demo {
     display: flex;
     flex-direction: row;
-    height: 540px; /** enlever **/
 }
 
 #code {
     background-color: #EFEFEF;
-    width: 300px;
+    width: 300px;                     /** take off **/
+    min-height: 100%;
 }
 
 #blank {
     background-color: #FFF;
     border: 2px solid #EFEFEF;
-    width: 700px;
+    width: 700px;                     /** take off **/
+    min-height: 100%;
 }
 
 #intro {
-    height: 300px; /** enlever **/
     font-size: 25px;
     padding-left: 60px;
     align-self: center;
@@ -99,9 +96,7 @@ nav a {
 aside {
     display: flex;
     flex-direction: row;
-    border-bottom: 2px solid #EFEFEF;
     justify-content: space-evenly;
-    min-height:  160px;
     align-items: center;
     font-size: 20px;
     color: #00007F;
@@ -126,8 +121,6 @@ aside i {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
-    border-bottom: 2px solid #EFEFEF;
-    border-top: 2px solid #EFEFEF;
     padding: 60px;
 }
 
@@ -138,7 +131,6 @@ aside i {
 
 #articles article {
     background-color: #F7F7F9;
-    min-height: 400px;
     padding: 20px;
 }
 
@@ -167,7 +159,6 @@ aside i {
 #info {
     display: flex;
     flex-direction: row;
-    border-bottom: 2px solid #EFEFEF;
 }
 
 #info .event {
