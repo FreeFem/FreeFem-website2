@@ -294,9 +294,8 @@ aside span {
 }
 
 #team img {
-  max-width: 30%;
-  max-height: 30%;
-  margin: 0 0.625rem;
+  height: 80px;
+  margin: 1rem;
 }
 
 /** FOOTER **/
