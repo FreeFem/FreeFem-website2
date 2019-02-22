@@ -245,7 +245,8 @@ aside span {
 
 #events .desc {
     padding-left: 0.625rem;
-    border-left: 0.125rem solid #444;
+    border-left: 0.125rem solid #C8C8C8;
+    font-size: 1.25rem;
 }
 
 #events h1 {
