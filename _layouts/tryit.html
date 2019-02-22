@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    {% include head.html %}
+
+    <body>
+        {% include header.html %}
+
+        <section id="main">
+			<textarea class="ffjs">
+mesh Th=square(10,10);
+plot(Th);
+			</textarea>
+        </section>
+		<button type="button" onclick="ffjs_evaluate()">evaluate</button>
+		<div id="ffjs_stdout" style="font-family:monospace;"></div>
+		<div id="ffjs_stderr" style="font-family:monospace;"></div>
+		<canvas class="ffjs_graph" data-ffjs="default" style="width:100%;">
+			(message for older browsers where canvas is not implemented)
+		</canvas>
+
+        {% include footer.html %}
+        <script src="js/openNav.js"></script>
+
+		<script src="//www.ljll.math.upmc.fr/lehyaric/ffjs/jquery-1.11.2.min.js"></script>
+		<script src="//www.ljll.math.upmc.fr/lehyaric/ffjs/15.6/freefem.min.js" type="text/javascript"></script>
+		<script src="//www.ljll.math.upmc.fr/lehyaric/ffjs/15.6/ffapi.js" type="text/javascript"></script>
+    </body>
+</html>
