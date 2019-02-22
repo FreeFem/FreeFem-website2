@@ -110,7 +110,8 @@ header a.icon {
 }
 
 #intro {
-    font-size: 1.56rem;
+    font-size: 1.25rem;
+    font-weight: 300;
     padding-left: 3.75rem;
     align-self: center;
     height: 31.25rem;
