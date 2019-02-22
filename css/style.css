@@ -133,8 +133,8 @@ aside i {
   font-weight: bold;
   color: #FFF;
   background-color: #0000FF;
-  padding: 10px 30px;
-  font-size: 25px;
+  padding: 1rem 4.625rem;
+  font-size: 2.125rem;
 }
 
 /** EMPTY BLOC**/
