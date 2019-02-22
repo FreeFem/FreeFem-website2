@@ -1,3 +1,5 @@
+
+
 /** FOR TABLETS **/
 @media screen and (max-width:800px) {
   #main {
@@ -12,6 +14,9 @@
   }
   #demo {
     order: 2;
+    width: 100% !important;
+  }
+  #blank video {
     width: 100% !important;
   }
   #articles {
