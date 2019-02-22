@@ -287,6 +287,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     min-height: 4.68rem;
+    font-size: 1.25rem;
 }
 
 footer i {
@@ -300,5 +301,9 @@ footer img {
 }
 
 footer p {
+  align-self: center;
+}
+
+footer a {
   align-self: center;
 }
