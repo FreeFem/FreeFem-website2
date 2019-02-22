@@ -7,7 +7,7 @@
     order: 1;
     width: 100% !important;
     height: unset !important;
-    margin-bottom: 60px !important;
+    margin-bottom: 3.75rem !important;
     padding-left: 0 !important;
   }
   #demo {
@@ -18,7 +18,7 @@
     display: block !important;
   }
   #articles article {
-    margin-bottom: 30px !important;
+    margin-bottom: 1.875rem !important;
   }
   #artFirst, #artSecond {
     margin-right: 0 !important;
@@ -28,14 +28,14 @@
     overflow: hidden;
     flex-direction: column;
     position: absolute;
-    top: 75px;
+    top: 4.68rem;
     background-color: #FFF;
-    border-bottom: 2px solid #EFEFEF;;
+    border-bottom: 0.125rem solid #EFEFEF;;
   }
   .top-nav a {
     text-align: left !important;
-    margin-left: 60px;
-    padding-bottom: 20px;
+    margin-left: 3.75rem;
+    padding-bottom: 1.25rem;
   }
   header a.icon {
     float: right;
@@ -46,10 +46,10 @@
 /** FOR MOBILE PHONES **/
 @media screen and (max-width:500px) {
   header img {
-    margin: 0 20px !important;
+    margin: 0 1.25rem !important;
   }
   #main {
-    padding: 20px !important;
+    padding: 1.25rem !important;
   }
   #demo {
     flex-direction: column !important;
@@ -65,13 +65,13 @@
   }
   aside {
     flex-direction: column !important;
-    min-height: 250px;
+    min-height: 15.625rem;
   }
   aside p {
     margin: 0 !important;
   }
   #articles {
-    padding: 20px !important;
+    padding: 1.25rem !important;
   }
   #info {
     flex-direction: column !important;
@@ -82,10 +82,10 @@
     padding: 0 !important;
   }
   #events h1 {
-    margin-left: 20px;
+    margin-left: 1.25rem;
   }
   #events div, #events article {
-    margin : 0 20px;
+    margin : 0 1.25rem;
   }
   #team {
     order: 2;
