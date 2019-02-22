@@ -336,7 +336,9 @@ footer img {
 }
 
 footer p, footer a, footer span {
-  align-self: center;
+    align-self: center;
+    flex: 1 1 0;
+    text-align: center;
 }
 
 /** SCROLLBAR DESIGN **/
