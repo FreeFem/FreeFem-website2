@@ -304,6 +304,14 @@ footer p {
   align-self: center;
 }
 
+footer span {
+    align-self: center;
+}
+
 footer a {
   align-self: center;
+}
+
+#lgpl {
+  margin-right: 1rem;
 }
