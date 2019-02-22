@@ -249,6 +249,7 @@ aside span {
 #events h1 {
     grid-row: 1;
     grid-column: 1/3;
+    font-size: 2.5rem;
 }
 
 #dateFirst {
