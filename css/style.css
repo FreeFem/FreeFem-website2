@@ -131,6 +131,7 @@ aside {
     justify-content: space-evenly;
     align-items: center;
     font-size: 1.25rem;
+    font-weight: 300;
     color: #00007F;
     text-align: center;
     min-width: 100%;
@@ -144,6 +145,8 @@ aside i {
 
 #release strong {
   display: block;
+  font-size: 1.9rem;
+  font-weight: 700;
 }
 
 #download a {
