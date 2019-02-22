@@ -7,6 +7,6 @@ fetch('https://api.github.com/repos/FreeFem/FreeFem-sources/releases/latest')
 		}
 	})
 	.then(data => {
-		document.getElementById("release").innerHTML = "RELEASE " + data.tag_name"
+		document.getElementById("release").innerHTML = "RELEASE " + data.tag_name
 	})
 	.catch(error => document.getElementById("release").innerHTML = "Grab the latest version");
