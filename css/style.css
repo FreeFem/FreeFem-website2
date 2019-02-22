@@ -59,6 +59,8 @@ nav a {
 
 header a.icon {
   display: none;
+  margin: 0 30px;
+  font-size: 25px;
 }
 
 /** MAIN **/
