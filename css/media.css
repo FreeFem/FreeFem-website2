@@ -23,10 +23,6 @@
   #artFirst, #artSecond {
     margin-right: 0 !important;
   }
-}
-
-/** FOR MOBILE PHONES **/
-@media only screen and (max-width:500px) {
   .top-nav {
     width: 0;
     overflow: hidden;
@@ -41,8 +37,12 @@
     margin-left: 60px;
     padding-bottom: 20px;
   }
-  .top-nav a.icon {
+  header a.icon {
     float: right;
-    display: block;
+    display: block !important;
   }
+}
+
+/** FOR MOBILE PHONES **/
+@media only screen and (max-width:500px) {
 }
