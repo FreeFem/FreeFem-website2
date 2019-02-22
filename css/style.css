@@ -91,7 +91,7 @@ header a.icon {
     height: 31.25rem;
     overflow-y: auto;
     min-width: 300px;
-    font-weight: 0.75rem;
+    font-size: 0.75rem;
 }
 
 #code pre {
