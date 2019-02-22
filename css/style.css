@@ -1,4 +1,4 @@
-6.25rem/** IMPORT **/
+/** IMPORT **/
 @import "media.css";
 
 /** GLOBAL **/
@@ -99,6 +99,14 @@ header a.icon {
 #blank {
     background-color: #FFF;
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#blank video {
+  width: 70%;
 }
 
 #intro {
