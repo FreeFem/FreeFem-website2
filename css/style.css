@@ -197,6 +197,7 @@ aside span {
     grid-row: 1;
     grid-column: 1/4;
     font-size: 2.5rem;
+    margin: 0 0 1.625rem 0;
 }
 
 #articles article {
@@ -234,11 +235,12 @@ aside span {
 }
 
 #events .date {
-    max-width: 3.75rem;
+    font-size: 1.25rem;
+    font-weight: 700;
     text-align: right;
-    white-space: pre;
     justify-self: end;
     padding-right: 0.625rem;
+    word-spacing: 9999rem;
 }
 
 #events .desc {
