@@ -115,12 +115,12 @@ header a.icon {
     align-self: center;
     height: 31.25rem;
     width: 30%;
-    text-align: justify;
 }
 
 #intro h1 {
   padding: 0;
   margin: 0;
+  font-size: 2.375rem;
 }
 
 /** ASIDE **/
