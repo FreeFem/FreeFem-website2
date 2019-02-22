@@ -44,9 +44,8 @@ header {
 }
 
 header img {
-    max-height: 40px;
-    max-width: 250px;
-    padding: 0 60px;
+    height: 40px;
+    margin: 0 60px;
 }
 
 nav {
@@ -200,7 +199,7 @@ aside i {
     grid-template-columns: 100px auto;
     grid-template-rows: auto auto auto;
     background-color: #F7F7F9;
-    padding: 60px;
+    padding: 20px 60px;
     width: 50%;
 }
 
@@ -256,7 +255,7 @@ aside i {
 #team {
     display: flex;
     flex-direction: column;
-    padding: 60px;
+    padding: 20px 60px;
     width: 50%;
 }
 
