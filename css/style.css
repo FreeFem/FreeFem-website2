@@ -124,6 +124,10 @@ header a.icon {
   font-size: 2.375rem;
 }
 
+#intro p {
+    line-height: 1.9rem;
+}
+
 /** ASIDE **/
 aside {
     display: flex;
