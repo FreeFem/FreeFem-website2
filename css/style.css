@@ -132,7 +132,7 @@ header a.icon {
 aside {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     font-size: 1.25rem;
     font-weight: 300;
@@ -159,6 +159,11 @@ aside i {
   background-color: #0000FF;
   padding: 1rem 4.625rem;
   font-size: 2.125rem;
+}
+
+#platforms p {
+  padding: 0;
+  margin: 0;
 }
 
 aside span {
