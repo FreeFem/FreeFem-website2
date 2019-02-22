@@ -89,7 +89,7 @@ header a.icon {
     background-color: #EFEFEF;
     height: 31.25rem;
     overflow-y: auto;
-    width: 30%;
+    width: 35%;
 }
 
 #code pre {
@@ -98,7 +98,7 @@ header a.icon {
 
 #blank {
     background-color: #FFF;
-    width: 70%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -308,16 +308,26 @@ footer img {
   align-self: center;
 }
 
-footer p {
+footer p, footer a, footer span {
   align-self: center;
 }
 
-footer span {
-    align-self: center;
+/** SCROLLBAR DESIGN **/
+body::-webkit-scrollbar {
+	width: .55rem;
 }
 
-footer a {
-  align-self: center;
+::-webkit-scrollbar {
+  width: .27rem;
+  height: .27rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0000FF;
 }
 
 #lgpl {
