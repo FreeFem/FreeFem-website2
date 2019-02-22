@@ -209,19 +209,8 @@ aside span {
     color: #A1AEB7;
 }
 
-#artFirst {
+#artFirst, #artSecond, #artThird {
     grid-row: 2;
-    grid-column: 1/2;
-}
-
-#artSecond {
-    grid-row: 2;
-    grid-column: 2/3;
-}
-
-#artThird {
-    grid-row: 2;
-    grid-column: 3/4;
 }
 
 /** INFORMATION **/
