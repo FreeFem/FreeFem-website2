@@ -329,3 +329,7 @@ body::-webkit-scrollbar {
 ::-webkit-scrollbar-thumb:hover {
   background: #0000FF;
 }
+
+#lgpl {
+  margin-right: 1rem;
+}
