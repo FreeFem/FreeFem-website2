@@ -141,12 +141,20 @@ aside i {
     font-size: 1.56rem;
 }
 
+#release strong {
+  display: block;
+}
+
 #download a {
   font-weight: bold;
   color: #FFF;
   background-color: #0000FF;
   padding: 0.625rem 1.875rem;
   font-size: 1.56rem;
+}
+
+aside span {
+  display: block;
 }
 
 /** EMPTY BLOC**/

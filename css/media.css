@@ -1,4 +1,11 @@
-
+@media screen and (max-width:1200px) {
+  #code {
+    width: 35%;
+  }
+  #blank {
+    width: 65%;
+  }
+}
 
 /** FOR TABLETS **/
 @media screen and (max-width:800px) {
