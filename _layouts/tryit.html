@@ -10,15 +10,18 @@
 mesh Th=square(10,10);
 plot(Th);
 			</textarea>
-        </section>
-		<button type="button" onclick="ffjs_evaluate()">evaluate</button>
-		<div id="ffjs_stdout" style="font-family:monospace;"></div>
-		<div id="ffjs_stderr" style="font-family:monospace;"></div>
-		<canvas class="ffjs_graph" data-ffjs="default" style="width:100%;">
-			(message for older browsers where canvas is not implemented)
-		</canvas>
+
+			<button type="button" onclick="ffjs_evaluate()">evaluate</button>
+			<div id="ffjs_stdout" style="font-family:monospace;"></div>
+			<div id="ffjs_stderr" style="font-family:monospace;"></div>
+			<canvas class="ffjs_graph" data-ffjs="default" style="width:100%;">
+				(message for older browsers where canvas is not implemented)
+			</canvas>
+
+		</section>
 
         {% include footer.html %}
+		
         <script src="js/openNav.js"></script>
 
 		<script src="//www.ljll.math.upmc.fr/lehyaric/ffjs/jquery-1.11.2.min.js"></script>
