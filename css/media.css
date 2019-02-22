@@ -52,7 +52,6 @@
   #blank {
     order: 1;
     width: 100% !important;
-    padding: 10px;
   }
   #code {
     order: 2;
