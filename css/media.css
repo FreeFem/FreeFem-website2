@@ -75,6 +75,7 @@
   #code {
     order: 2;
     width: 100% !important;
+    height: 100%;
   }
   aside {
     flex-direction: column !important;
