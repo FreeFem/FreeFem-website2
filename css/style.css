@@ -161,6 +161,10 @@ aside i {
   font-size: 2.125rem;
 }
 
+#platforms {
+  margin: 2.75rem 0;
+}
+
 #platforms p {
   padding: 0;
   margin: 0;
