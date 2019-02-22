@@ -158,6 +158,7 @@ aside i {
 #articles h1 {
     grid-row: 1;
     grid-column: 1/4;
+    font-size: 2.5rem;
 }
 
 #articles article {
