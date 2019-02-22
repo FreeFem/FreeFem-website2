@@ -90,7 +90,8 @@ header a.icon {
     background-color: #EFEFEF;
     height: 31.25rem;
     overflow-y: auto;
-    min-width: 400px;
+    min-width: 300px;
+    font-weight: 0.75rem;
 }
 
 #code pre {
@@ -115,7 +116,7 @@ header a.icon {
     padding-left: 3.75rem;
     align-self: center;
     height: 31.25rem;
-    width: 30%;
+    width: 40%;
 }
 
 #intro h1 {
