@@ -163,9 +163,9 @@ aside i {
   line-height: 4.625rem;
 }
 
-#platforms, #release {
-    width: 176px;
+#platforms, #release, #download {
     margin: 2.75rem 0;
+    flex: 1 1 0;
 }
 
 #platforms p {
@@ -309,7 +309,6 @@ aside span {
 /** FOOTER **/
 footer {
     display: flex;
-    justify-content: space-evenly;
     min-height: 4.68rem;
     font-size: 1.25rem;
 }

@@ -84,6 +84,11 @@
   aside p {
     margin: 0 !important;
   }
+
+  #download {
+    margin: 0 !important;
+  }
+
   #articles {
     padding: 1.25rem !important;
   }
