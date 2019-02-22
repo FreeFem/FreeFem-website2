@@ -45,4 +45,17 @@
 
 /** FOR MOBILE PHONES **/
 @media only screen and (max-width:500px) {
+  #demo {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  #blank {
+    order: 1;
+    width: 100% !important;
+    padding: 10px;
+  }
+  #code {
+    order: 2;
+    width: 100% !important;
+  }
 }
