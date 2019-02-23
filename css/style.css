@@ -260,6 +260,7 @@ aside span {
     padding-left: 0.625rem;
     border-left: 0.125rem solid #C8C8C8;
     font-size: 1.25rem;
+    font-weight: 300;
     margin: 0;
 }
 
@@ -268,7 +269,8 @@ aside span {
     margin: 0;
     padding-left: 0.625rem;
     border-left: 0.125rem solid #C8C8C8;
-
+    color: #A1AEB7;
+    font-weight: 300;
 }
 
 /** TEAM **/
