@@ -227,7 +227,7 @@ aside span {
 /** EVENTS **/
 #events {
     display: grid;
-    grid-template-columns: 6.25rem auto;
+    grid-template-columns: min-content auto;
     grid-template-rows: auto auto auto;
     background-color: #F7F7F9;
     padding: 1.25rem 3.75rem;
