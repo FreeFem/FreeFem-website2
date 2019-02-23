@@ -99,13 +99,12 @@
     order: 1;
     width: 100% !important;
     padding: 0 !important;
+    margin : 0 1.25rem !important;
   }
   #events h1 {
     margin-left: 1.25rem;
   }
-  #events div, #events article {
-    margin : 0 1.25rem;
-  }
+
   #team {
     order: 2;
     width: 100% !important;
