@@ -235,7 +235,7 @@ aside span {
 
 .event-grid {
     display: grid;
-    grid-template-columns: min-content auto;
+    grid-template-columns: 8rem auto;
     grid-template-rows: auto auto;
     grid-template-areas: "date title" "date description";
 }

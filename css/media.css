@@ -92,17 +92,23 @@
   #articles {
     padding: 1.25rem !important;
   }
+
   #info {
     flex-direction: column !important;
   }
+
   #events {
     order: 1;
     width: 100% !important;
-    padding: 0 !important;
-    margin : 0 1.25rem !important;
+    padding: 0 1.25rem !important;
   }
+
   #events h1 {
     margin-left: 1.25rem;
+  }
+
+  .event-grid {
+    margin : 0 1.25rem !important;
   }
 
   #team {
