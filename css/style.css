@@ -236,7 +236,7 @@ aside span {
 .event-grid {
     display: grid;
     grid-template-columns: 8rem auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: 1.875rem auto;
     grid-template-areas: "date title" "date description";
 }
 
@@ -283,6 +283,7 @@ aside span {
 
 #team h1 {
   text-align: center;
+  font-size: 2.5rem;
 }
 
 #team div {
