@@ -100,7 +100,7 @@
   #events {
     order: 1;
     width: 100% !important;
-    padding: 0 1.25rem !important;
+    padding: 0 !important;
   }
 
   #events h1 {
