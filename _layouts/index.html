@@ -173,29 +173,29 @@ load "iovtk"
         <section id="articles">
             <h1>Latest Articles</h1>
             <article id="artFirst">
-              <a href="{% site.data.articles.articles[0].link %}" target="_blank">
-                <p>{% site.data.articles.articles[0].date | date: '%B %d, %Y' %} | {% site.data.articles.articles[0].authors %}</p>
-                <h2>{% site.data.articles.articles[0].title %}</h2>
+              <a href="{{ site.data.articles.articles[0].link }}" target="_blank">
+                <p>{{ site.data.articles.articles[0].date | date: '%B %d, %Y' }} | {{ site.data.articles.articles[0].authors }}</p>
+                <h2>{{ site.data.articles.articles[0].title }}</h2>
                 <p>
-                  {% site.data.articles.articles[0].abstract %}
+                  {{ site.data.articles.articles[0].abstract }
                 </p>
               </a>
             </article>
             <article id="artSecond">
-              <a href="{% site.data.articles.articles[1].link %}" target="_blank">
-                <p>{% site.data.articles.articles[1].date | date: '%B %d, %Y' %} | {% site.data.articles.articles[1].authors %}</p>
-                <h2>{% site.data.articles.articles[1].title %}</h2>
+              <a href="{{ site.data.articles.articles[1].link }}" target="_blank">
+                <p>{{ site.data.articles.articles[1].date | date: '%B %d, %Y' }} | {{ site.data.articles.articles[1].authors }}</p>
+                <h2>{{ site.data.articles.articles[1].title }}</h2>
                 <p>
-                  {% site.data.articles.articles[1].abstract %}
+                  {{ site.data.articles.articles[1].abstract }}
                 </p>
               </a>
             </article>
             <article id="artThird">
-              <a href="{% site.data.articles.articles[2].link %}" target="_blank">
-                <p>{% site.data.articles.articles[2].date | date: '%B %d, %Y' %} | {% site.data.articles.articles[2].authors %}</p>
-                <h2>{% site.data.articles.articles[2].title %}</h2>
+              <a href="{{ site.data.articles.articles[2].link }}" target="_blank">
+                <p>{{ site.data.articles.articles[2].date | date: '%B %d, %Y' }} | {{ site.data.articles.articles[2].authors }}</p>
+                <h2>{{ site.data.articles.articles[2].title }}</h2>
                 <p>
-                  {% site.data.articles.articles[2].abstract %}
+                  {{ site.data.articles.articles[2].abstract }}
                 </p>
               </a>
             </article>
