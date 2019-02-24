@@ -193,7 +193,7 @@ aside span {
     column-gap: 2.625rem;
 }
 
-#articles a:hover {
+#articles a {
     color: #444;
 }
 
