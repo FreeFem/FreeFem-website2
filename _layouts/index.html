@@ -173,51 +173,31 @@ load "iovtk"
         <section id="articles">
             <h1>Latest Articles</h1>
             <article id="artFirst">
-                <a href="https://freefem.org" target="_blank">
-                  <p>13 February 2019 | A.M. Castro, E.Y. Mayorga and F.L. Moreno</p>
-                  <h2>Mathematical modelling of convective drying of feijoa (Acca sellowianaBerg) slices</h2>
-                  <p>
-                    A two-dimensional mathematical model for coupled heat and mass transfer during convective drying of feijoa (Acca sellowianaBerg) slices was implemented. Thethermophysical and transport properties were considered variable and the effective moisture diffusion coefficient was determined based on the Arrhenius-typetemperature dependence.
-                  </p>
-                  <p>
-                    The convective heat and mass transfer coefficients were obtained from the minimization of the function in terms of the error of experi-mental and predicted data. The model was solved by means of thefinite element method programmed in FreeFEM. This is a free software that has not been reportedfor fruit convective drying modelling, but this software can be used for drying modelling in fruits.
-                  </p>
-                  <p>
-                    The model was validated against experimental data for airvelocities of 0.5 and 1 ms−1, temperatures of 50, 60, and 70 °C and slice thicknesses of 0.003 and 0.005 m through Lin's concordance correlation coefficient (ρc).Which has not been reported for validation in drying modelling though it is a reliable indicator of model agreement.
-                  </p>
-                  <p>
-                    Experimental data were well predicted with themodel, with concordance correlation coefficients of 0.9653 and 0.9872 for moisture content and temperature, respectively. The model was found to be suitable todescribe, with sufficient accuracy, the heat and mass transfer during drying, and hence, it is appropriate for engineering applications.
-                  </p>
-                </a>
+              <a href="{% site.data.articles.articles[0].link %}" target="_blank">
+                <p>{% site.data.articles.articles[0].date | date: '%B %d, %Y' %} | {% site.data.articles.articles[0].authors %}</p>
+                <h2>{% site.data.articles.articles[0].title %}</h2>
+                <p>
+                  {% site.data.articles.articles[0].abstract %}
+                </p>
+              </a>
             </article>
             <article id="artSecond">
-                <p>February 13, 2019 | D. Fabre, V. Citro, D. Ferreira Sabino, P. Bonnefis, J. Sierra, F. Giannetti and M. Pigou</p>
-                <h2>A Practical Review on Linear and Nonlinear Global Approaches to Flow Instabilities</h2>
+              <a href="{% site.data.articles.articles[1].link %}" target="_blank">
+                <p>{% site.data.articles.articles[1].date | date: '%B %d, %Y' %} | {% site.data.articles.articles[1].authors %}</p>
+                <h2>{% site.data.articles.articles[1].title %}</h2>
                 <p>
-                  This paper aims at reviewing linear and nonlinear approaches to study the stability of fluid flows. We provide a concise but self-contained exposition of the main concepts and specific numerical methods designed for global stability studies, including the classical linear stability analysis, the adjoint-based sensitivity, and the most recent nonlinear developments.
+                  {% site.data.articles.articles[1].abstract %}
                 </p>
-                <p>
-                  Regarding numerical implementation, a number of ideas making resolution particularly efficient are discussed, including mesh adaptation, simple shift-invert strategy instead of the classical Arnoldi algorithm, and a simplification of the recent nonlinear self-consistent (SC) approach proposed by Mantič-Lugo et al. (2014, “Self-Consistent Mean Flow Description of the Nonlinear Saturation of the Vortex Shedding in the Cylinder Wake,” Phys. Rev. Lett., 113(8), p. 084501).
-                </p>
-                <p>
-                  An open-source software implementing all the concepts discussed in this paper is provided. The software is demonstrated for the reference case of the two-dimensional (2D) flow around a circular cylinder, in both incompressible and compressible cases, but is easily customizable to a variety of other flow configurations or flow equations.
-                </p>
+              </a>
             </article>
             <article id="artThird">
-                <p>December 6, 2018 | A. Rakotondrandisa, I. Danaila and L. Danaila</p>
-                <h2>Numerical modelling of a melting-solidification cycle of a phase-change material with complete or partial melting</h2>
+              <a href="{% site.data.articles.articles[2].link %}" target="_blank">
+                <p>{% site.data.articles.articles[2].date | date: '%B %d, %Y' %} | {% site.data.articles.articles[2].authors %}</p>
+                <h2>{% site.data.articles.articles[2].title %}</h2>
                 <p>
-                  A high accuracy numerical model is used to simulate an alternate melting and solidification cycle of a phase change material (PCM). We use a second order (in time and space) finite-element method with mesh adaptivity to solve a single-domain model based on the Navier-Stokes-Boussinesq equations.
+                  {% site.data.articles.articles[2].abstract %}
                 </p>
-                <p>
-                  An enthalpy method is applied to the energy equation. A Carman-Kozeny type penalty term is introduced in the momentum equation to bring the velocity to zero inside the solid region. The mesh is dynamically adapted at each time step to accurately capture the interface between solid and liquid phases, the boundary-layer structure at the walls and the multi-cellular unsteady convection in the liquid.
-                </p>
-                <p>
-                  We consider the basic configuration of a differentially heated square cavity filled with an octadecane paraffin and use experimental and numerical results from the literature to validate our numerical system. The first study case considers the complete melting of the PCM (liquid fraction of 95%), followed by a complete solidification.
-                </p>
-                <p>
-                  For the second case, the solidification is triggered after a partial melting (liquid fraction of 50%). Both cases are analysed in detail by providing temporal evolution of the solidliquid interface, liquid fraction, Nusselt number and accumulated heat input. Different regimes are identified during the melting-solidification process and explained using scaling correlation analysis. Practical consequences of these two operating modes are finally discussed.
-                </p>
+              </a>
             </article>
         </section>
 

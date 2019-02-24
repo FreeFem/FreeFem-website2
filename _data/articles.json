@@ -1,0 +1,26 @@
+{
+  "readme": "This is a list of scientific articles referencing FreeFEM. Please add the latest articles at the top of the list and use the Date.prototype.toJSON() format",
+  "articles": [
+  {
+    "title": "Shear rate projection schemes for non–Newtonian fluids.",
+    "authors":"J. Deteixa, D. Yakoubi",
+    "date": "2019-02-14T23:00:00.000Z",
+    "abstract": "The operator splitting approach applied to the Navier-Stokes equations, gave rise to various numerical methods for the simulations of the dynamics of fluids. The separate work of Chorin and Temam on this subject gave birth to the so-called projection methods. The basic projection schemes, either the incremental or non-incremental variant (see [1]) induces an artificial Neumann boundary condition on the pressure. By getting rid of this boundary condition on the pressure, the so-call rotational incremental pressure-correction scheme as proposed by Timmermans et al. [2] for Newtonian fluids with constant viscosity gives a consistent equation for the pressure. In this work we propose a family of projection methods for generalized Newtonian fluids based on an extension of the rotational projection scheme. Called shear rate projections, these methods produces consistent pressure when applied to generalized Newtonian fluids. Accuracy of the methods will be illustrated using a manufactured solution. Numerical experiments for the flow past a cylinder, with aCarreau rheological model, will also be presented.",
+    "link": "https://arxiv.org/pdf/1902.05643.pdf"
+  },
+  {
+    "title": "Optimal Control of Part Load Vortex Rope in Francis Turbines",
+    "authors":" S. Pasche, F. Avellan, F. Gallaire",
+    "date": "2019-02-13T23:00:00.000Z",
+    "abstract": "The mitigation of the precessing vortex core developing in the draft tube of Francis turbines operating under part load conditions is crucial to increase the operation flexibility of these hydraulic machines to balance the massive power production of intermittent energy sources. A systematic approach following the optimal control theory is, therefore, presented to control this vortical flow structure. Modal analysis characterizes the part load vortex rope as a self-sustained instability associated with an unstable eigenmode. Based on this physical characteristic, an objective function targeting a zero value of the unstable eigenvalue growth rate is defined and subsequently minimized using an adjoint-based optimization algorithm. We determine an optimal force distribution that successfully quenches the part load vortex rope and sketches the design of a realistic control appendage.",
+    "link": "https://fluidsengineering.asmedigitalcollection.asme.org/article.aspx?articleid=2722923"
+  },
+  {
+    "title": "Mathematical modelling of convective drying of feijoa (Acca sellowiana Berg) slices",
+    "authors":"A.M. Castro, E.Y. Mayorga, F.L. Moreno",
+    "date": "2019-02-09T23:00:00.000Z",
+    "abstract": "A two-dimensional mathematical model for coupled heat and mass transfer during convective drying of feijoa (Acca sellowiana Berg) slices was implemented. The thermophysical and transport properties were considered variable and the effective moisture diffusion coefficient was determined based on the Arrhenius-type temperature dependence. The convective heat and mass transfer coefficients were obtained from the minimization of the function in terms of the error of experimental and predicted data. The model was solved by means of the finite element method programmed in FreeFEM. This is a free software that has not been reported for fruit convective drying modelling, but this software can be used for drying modelling in fruits. The model was validated against experimental data for air velocities of 0.5 and 1 ms−1, temperatures of 50, 60, and 70 °C and slice thicknesses of 0.003 and 0.005 m through Lin's concordance correlation coefficient (ρc). Which has not been reported for validation in drying modelling though it is a reliable indicator of model agreement. Experimental data were well predicted with the model, with concordance correlation coefficients of 0.9653 and 0.9872 for moisture content and temperature, respectively. The model was found to be suitable to describe, with sufficient accuracy, the heat and mass transfer during drying, and hence, it is appropriate for engineering applications.",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S0260877419300536"
+  }
+]
+}
