@@ -97,7 +97,7 @@
     flex-direction: column !important;
   }
 
-  #events:target::before {
+  /* #events:target::before {
     margin-top: -3.5rem !important;
     padding-top: 3.5rem !important;
   }
@@ -107,7 +107,7 @@
     margin-top: -.9rem;
     padding-top: .9rem;
     content: "";
-  }
+  } */
 
   #events {
     order: 1;
