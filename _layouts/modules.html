@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    {% include head.html %}
+
+    <body>
+        {% include header.html %}
+
+        <section id="main" class="modulesMain">
+          <div id="sideNavigation">
+            <div class="categoriesArea">
+              <i class="fas fa-tag"></i>
+              <div class="categories">
+                <label class="catContainer solid">solid
+                  <input type="checkbox">
+                </label>
+                <label class="catContainer electromagnetism">electromagnetism
+                  <input type="checkbox">
+                </label>
+                <label class="catContainer academic">academic
+                  <input type="checkbox">
+                </label>
+                <label class="catContainer validated">validated
+                  <input type="checkbox">
+                </label>
+                <label class="catContainer fluid">fluid
+                  <input type="checkbox">
+                </label>
+              </div>
+            </div>
+            <div class="searchArea">
+              <label>
+                <i class="fas fa-search"></i>
+                <input type="search" placeholder="Search">
+              </label>
+            </div>
+            <div class="modulesList" id="modulesList">
+              <a href="#">Elasticity</a>
+              <a href="#">Helmoltz</a>
+              <a href="#">Magnetostatic</a>
+              <a href="#">Maxwell waveguide boundary conditions</a>
+              <a href="#">Poisson</a>
+              <a href="#">Steady Navier-Stokes</a>
+              <a href="#">Stokes</a>
+              <a href="#">Wentzel</a>
+            </div>
+          </div>
+          <div id="algoDisplay">
+            <h2>Title</h2>
+            <p>Description</p>
+            <div id="algoCode">CODE</div>
+            <div id="algoResult">
+              <h2>Algo name</h2>
+              <div id="algoGraphic">Graphic representation</div>
+            </div>
+          </div>
+        </section>
+
+        {% include footer.html %}
+
+        <script src="js/openNav.js"></script>
+    </body>
+</html>
