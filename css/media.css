@@ -120,6 +120,7 @@
   }
 
   .event-grid {
+	grid-template-rows: auto auto !important;
     margin : 0 1.25rem !important;
   }
 
