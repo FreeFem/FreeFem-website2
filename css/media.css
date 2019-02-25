@@ -118,8 +118,7 @@
   }
 
   #team img {
-    height: 2.5rem;
-    margin: 1rem;
+    height: 2.5rem !important;
   }
 
   footer {
