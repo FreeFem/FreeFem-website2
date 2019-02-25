@@ -116,6 +116,11 @@
     width: 100% !important;
     padding: 0 !important;
   }
+
+  #team img {
+    height: 2.5rem !important;
+  }
+
   footer {
     flex-direction: column !important;
   }
