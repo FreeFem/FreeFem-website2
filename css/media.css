@@ -98,10 +98,10 @@
   }
 
   #events:target::before {
-    margin-top: -3.5rem;
-    padding-top: 3.5rem;
+    margin-top: -3.5rem !important;
+    padding-top: 3.5rem !important;
   }
-  
+
   #events::before {
     display: block;
     margin-top: -.9rem;
