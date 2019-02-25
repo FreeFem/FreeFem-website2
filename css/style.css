@@ -303,14 +303,14 @@ aside span {
 }
 
 #team img {
-  height: 80px;
+  height: 5rem;
   margin: 1rem;
 }
 
 /** FOOTER **/
 footer {
     display: flex;
-    min-height: 7.5rem;
+    min-height: 4.5rem;
     font-size: 1.25rem;
 }
 
