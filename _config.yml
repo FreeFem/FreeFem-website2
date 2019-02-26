@@ -1,0 +1,9 @@
+source: .
+destination: _site
+
+excldue: [_data/articles.json]
+keep_files: [_data/articles.json]
+
+encoding: utf-8
+
+data_dir: data
