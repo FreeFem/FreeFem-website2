@@ -3,6 +3,10 @@
     {% include head.html %}
 
     <body>
+		<script async src="//www.ljll.math.upmc.fr/lehyaric/ffjs/jquery-1.11.2.min.js"></script>
+		<script async src="//www.ljll.math.upmc.fr/lehyaric/ffjs/17.1/freefem.min.js" type="text/javascript"></script>
+		<script async src="//www.ljll.math.upmc.fr/lehyaric/ffjs/17.1/ffapi.js" type="text/javascript"></script>
+
         {% include header.html %}
 
         <section id="main">
@@ -22,10 +26,6 @@ plot(Th);
 
         {% include footer.html %}
 
-        <script src="js/openNav.js"></script>
-
-		<script src="//www.ljll.math.upmc.fr/lehyaric/ffjs/jquery-1.11.2.min.js"></script>
-		<script src="//www.ljll.math.upmc.fr/lehyaric/ffjs/17.1/freefem.min.js" type="text/javascript"></script>
-		<script src="//www.ljll.math.upmc.fr/lehyaric/ffjs/17.1/ffapi.js" type="text/javascript"></script>
+        <script src="{{ site.url }}{{ site.baseurl }}/js/openNav.js"></script>
     </body>
 </html>

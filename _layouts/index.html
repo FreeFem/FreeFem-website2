@@ -147,9 +147,9 @@ load "iovtk"
 
                 <div id="blank">
 					<video id="laplacianVideo" playsinline autoplay muted loop>
-						<source src="vid/sphere.webm" type="video/webm" />
-						<source src="vid/sphere.mp4" type="video/mp4" />
-						<img src="img/simulation_poisson_3d.jpg" alt="Poisson's equation 3D - Iso-surfaces of the solution">
+						<source src="{{ site.url }}{{ site.baseurl }}/vid/sphere.webm" type="video/webm" />
+						<source src="{{ site.url }}{{ site.baseurl }}/vid/sphere.mp4" type="video/mp4" />
+						<img src="{{ site.url }}{{ site.baseurl }}/img/simulation_poisson_3d.jpg" alt="Poisson's equation 3D - Iso-surfaces of the solution">
 					</video>
 				</div>
             </article>
@@ -227,18 +227,18 @@ load "iovtk"
             <section id="team">
               <h1>You are in good company</h1>
               <div>
-                <a href="http://www.sorbonne-universite.fr/" target="_blank"><img alt="Sorbonne université" src="img/logo_Sorbonne.svg"/></a>
-                <a href="https://www.inria.fr/" target="_blank"><img alt="INRIA" src="img/logo_INRIA_EN.svg"/></a>
-                <a href="http://www.agence-nationale-recherche.fr/" target="_blank"><img alt="ANR" src="img/logo_ANR.svg"/></a>
-                <a href="http://www.genci.fr/" target="_blank"><img alt="Genci" src="img/logo_Genci.jpg"/></a>
-				        <a href="http://www.cnrs.fr/" target="_blank"><img alt="CNRS" src="img/logo_CNRS.svg"/></a>
+                <a href="http://www.sorbonne-universite.fr/" target="_blank"><img alt="Sorbonne université" src="{{ site.url }}{{ site.baseurl }}/img/logo_Sorbonne.svg"/></a>
+                <a href="https://www.inria.fr/" target="_blank"><img alt="INRIA" src="{{ site.url }}{{ site.baseurl }}/img/logo_INRIA_EN.svg"/></a>
+                <a href="http://www.agence-nationale-recherche.fr/" target="_blank"><img alt="ANR" src="{{ site.url }}{{ site.baseurl }}/img/logo_ANR.svg"/></a>
+                <a href="http://www.genci.fr/" target="_blank"><img alt="Genci" src="{{ site.url }}{{ site.baseurl }}/img/logo_Genci.jpg"/></a>
+				        <a href="http://www.cnrs.fr/" target="_blank"><img alt="CNRS" src="{{ site.url }}{{ site.baseurl }}/img/logo_CNRS.svg"/></a>
               </div>
             </section>
         </section>
 
         {% include footer.html %}
-        <script src="js/codeColor.js"></script>
-        <script src="js/openNav.js"></script>
-		<script src="js/githubRelease.js"></script>
+        <script src="{{ site.url }}{{ site.baseurl }}/js/codeColor.js"></script>
+        <script src="{{ site.url }}{{ site.baseurl }}/js/openNav.js"></script>
+		<script src="{{ site.url }}{{ site.baseurl }}/js/githubRelease.js"></script>
     </body>
 </html>
