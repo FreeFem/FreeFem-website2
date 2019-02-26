@@ -97,19 +97,10 @@
     flex-direction: column !important;
   }
 
-  #events:target::before {
-    margin-top: -3.5rem;
-    padding-top: 3.5rem;
-  }
-  
-  #events::before {
-    display: block;
-    margin-top: -.9rem;
-    padding-top: .9rem;
-    content: "";
-  }
-
   #events {
+    border-top: 4.7rem solid transparent;
+    margin-top: -4.7rem;
+    background-clip: padding-box;
     order: 1;
     width: 100% !important;
     padding: 0 !important;
@@ -120,6 +111,7 @@
   }
 
   .event-grid {
+	grid-template-rows: auto auto !important;
     margin : 0 1.25rem !important;
   }
 
