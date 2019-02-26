@@ -45,6 +45,7 @@ header {
     border-bottom: 0.125rem solid #EFEFEF;
     position: sticky;
   	top: 0;
+    z-index: 1;
 }
 
 header img {
