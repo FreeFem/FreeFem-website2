@@ -45,7 +45,6 @@ header {
     border-bottom: 0.125rem solid #EFEFEF;
     position: sticky;
   	top: 0;
-    z-index: 1;
 }
 
 header img {
@@ -147,6 +146,11 @@ aside {
 aside i {
     margin: 0.625rem 0.312rem;
     font-size: 1.56rem;
+}
+
+#release {
+    display: flex;
+    justify-content: normal;
 }
 
 #release strong {
