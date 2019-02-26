@@ -150,7 +150,7 @@ aside i {
 
 #release {
     display: flex;
-    justify-content: normal;
+    justify-content: center;
 }
 
 #release strong {
