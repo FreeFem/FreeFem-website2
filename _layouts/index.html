@@ -238,6 +238,10 @@ load "iovtk"
 
         {% include footer.html %}
         <script src="{{ site.url }}{{ site.baseurl }}/js/codeColor.js"></script>
+		<script>
+			const code = document.getElementById('code')
+			codeColor(code)
+		</script>
         <script src="{{ site.url }}{{ site.baseurl }}/js/openNav.js"></script>
 		<script src="{{ site.url }}{{ site.baseurl }}/js/githubRelease.js"></script>
     </body>
