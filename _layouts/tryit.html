@@ -27,8 +27,31 @@
             <div id="exampleCode">
               <h2>Code</h2>
               <textarea class="ffjs">
-mesh Th=square(10,10);
-plot(Th);</textarea>
+mesh Th=square(10, 10, flags=2);
+plot(Th);
+
+fespace Uh(Th, P1);
+Uh u;
+
+macro grad(u)[dx(u), dy(u)]//
+
+varf vLaplacian (u, v)
+	= int2d(Th)(
+		  grad(u)' * grad(v)
+	)
+	+ int2d(Th)(
+		  1. * v
+	)
+	+ on(1, 2, 3, 4, u=0)
+	;
+
+matrix<real> Laplacian = vLaplacian(Uh, Uh, solver=sparsesolver);
+real[int] LaplacianRHS = vLaplacian(0, Uh);
+
+u[] = Laplacian^-1 * LaplacianRHS;
+
+plot(u);
+</textarea>
             </div>
             <div id="exampleResult">
               <h2>Result</h2>
