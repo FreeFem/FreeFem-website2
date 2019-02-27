@@ -5,8 +5,8 @@ function openConsole() {
   const temp = document.getElementById('main')
 
   if (open) {
-    temp.style.gridTemplateRows = "auto 39px"
-    exConsole.style.height = "39px"
+    temp.style.gridTemplateRows = "auto 2.4375remx"
+    exConsole.style.height = "2.4375rem"
     exConsole.style.overflow = "hidden"
     open = false
   } else {

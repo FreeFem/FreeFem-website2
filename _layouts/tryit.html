@@ -26,8 +26,8 @@
             </div>
             <div id="exampleCode">
               <h2>Code</h2>
-              <div class="ffjs" contenteditable="true">
-                <pre id="code">
+              <div class="ffjs" contenteditable="true" id="code">
+                <pre>
 mesh Th=square(10, 10, flags=2);
 plot(Th);
 
@@ -78,7 +78,12 @@ plot(u);
         <script src="{{ site.url }}{{ site.baseurl }}/js/openConsole.js"></script>
         <script src="{{ site.url }}{{ site.baseurl }}/js/codeColor.js"></script>
 		<script>
-			//add event input changed launch colorCode(element code)
+			const code = document.getElementById('code')
+      codeColor(code)
+      code.addEventListener("input", function() {
+        codeColor(code)
+        console.log("ok")
+      })
 		</script>
     </body>
 </html>
