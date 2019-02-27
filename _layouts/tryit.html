@@ -18,18 +18,33 @@
         {% include header.html %}
 
         <section id="main">
+            <div id="exampleScripts">
+              <h2>Example Scripts</h2>
+              <div id="exampleLinks">
 
-			      <textarea class="ffjs">
+              </div>
+            </div>
+            <div id="exampleCode">
+              <h2>Code</h2>
+              <textarea class="ffjs">
 mesh Th=square(10,10);
 plot(Th);
-			      </textarea>
+              </textarea>
+            </div>
+            <div id="exampleResult">
+              <h2>Result</h2>
+              <div class="arrow-right"></div>
+              <button type="button" onclick="ffjs_evaluate()">RUN</button>
+              <canvas class="ffjs_graph" data-ffjs="default" style="width:100%;">
+                (message for older browsers where canvas is not implemented)
+              </canvas>
+            </div>
+            <div id="exampleConsole">
+              <h2>Console</h2>
+              <div id="ffjs_stdout" style="font-family:monospace;"></div>
+            </div>
 
-      			<button type="button" onclick="ffjs_evaluate()">evaluate</button>
-      			<div id="ffjs_stdout" style="font-family:monospace;"></div>
-      			<div id="ffjs_stderr" style="font-family:monospace;"></div>
-      			<canvas class="ffjs_graph" data-ffjs="default" style="width:100%;">
-      				(message for older browsers where canvas is not implemented)
-      			</canvas>
+      			<!-- <div id="ffjs_stderr" style="font-family:monospace;"></div> -->
 
 		    </section>
 
