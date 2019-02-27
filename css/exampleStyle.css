@@ -1,0 +1,116 @@
+/** IMPORT **/
+@import "media.css";
+
+/** GLOBAL **/
+html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    color: #444;
+    position: relative;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+body > section {
+    border-bottom: 0.125rem solid #EFEFEF;
+}
+
+a {
+    text-decoration: none;
+    color: #00007F;
+}
+
+/** HEADER **/
+header {
+    min-height: 4.68rem;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFF;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-bottom: 0.125rem solid #EFEFEF;
+    position: sticky;
+  	top: 0;
+}
+
+header img {
+    height: 2.5rem;
+    margin: 0 3.75rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 3.75rem;
+}
+
+nav a {
+    margin-left: 3.25rem;
+}
+
+header a.icon {
+  display: none;
+  margin: 0 1.25rem;
+  font-size: 1.56rem;
+}
+
+/** FOOTER **/
+footer {
+    display: flex;
+    min-height: 4.5rem;
+    font-size: 1.25rem;
+}
+
+footer i {
+    color: #FF699B;
+}
+
+footer img {
+  height: 2.5rem;
+  width: 2.5rem;
+  align-self: center;
+}
+
+footer p, footer a, footer span {
+    align-self: center;
+    flex: 1 1 0;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/** SCROLLBAR DESIGN **/
+body::-webkit-scrollbar {
+	width: .55rem;
+}
+
+::-webkit-scrollbar {
+  width: .27rem;
+  height: .27rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0000FF;
+}
+
+#lgpl {
+  margin-right: 1rem;
+}
