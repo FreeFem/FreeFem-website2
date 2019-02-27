@@ -1,6 +1,3 @@
-const code = document.getElementById('code')
-codeColor(code)
-
 function codeColor(element) {
 	var elementText = element.innerHTML;
 
