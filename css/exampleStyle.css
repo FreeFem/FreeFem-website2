@@ -136,6 +136,10 @@ header a.icon {
 #exampleResult {
   grid-column: 3;
   grid-row: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #exampleResult h2 {
@@ -144,6 +148,7 @@ header a.icon {
   font-size: 1rem;
   position: sticky;
   top: 0;
+  align-self: stretch;
 }
 
 #exampleResult .arrow-right {
@@ -153,25 +158,33 @@ header a.icon {
   border-bottom: 40px solid transparent;
   border-left: 60px solid #00007F;
   position: absolute;
+  z-index: 1;
+  top: calc(50% - 40px);
+  left: calc(50% - 22px);
 }
 
-/* #exampleResult button {
+#exampleResult button {
   border: none;
   color: white;
   font-weight: 700;
-  position: relative;
-  top: 30px;
+  position: absolute;
+  z-index: 2;
+  top: calc(50% - 8px);
+  left: calc(50% - 20px);
   background-color: transparent;
-} */
+}
 
 #exampleResult button:hover {
   cursor: pointer;
 }
 
-/* #exampleResult canvas {
-  width: 80% !important;
-  height: unset !important;
-} */
+#exampleResult button:focus {
+	outline: none;
+}
+
+#exampleResult canvas {
+  margin: auto;
+}
 
 #exampleConsole {
   grid-column: 3;
