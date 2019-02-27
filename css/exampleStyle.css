@@ -201,8 +201,8 @@ header a.icon {
   top: 0;
 }
 
-#consoleDisplay {
-  overflow: auto;
+#ffjs_stdout {
+  padding: 10px;
 }
 
 /** FOOTER **/
