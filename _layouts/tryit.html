@@ -26,7 +26,8 @@
             </div>
             <div id="exampleCode">
               <h2>Code</h2>
-              <textarea class="ffjs">
+              <div class="ffjs" contenteditable="true">
+                <pre id="code">
 mesh Th=square(10, 10, flags=2);
 plot(Th);
 
@@ -51,7 +52,8 @@ real[int] LaplacianRHS = vLaplacian(0, Uh);
 u[] = Laplacian^-1 * LaplacianRHS;
 
 plot(u);
-</textarea>
+</pre>
+</div>
             </div>
             <div id="exampleResult">
               <h2>Result</h2>
@@ -74,5 +76,6 @@ plot(u);
 
         <script src="{{ site.url }}{{ site.baseurl }}/js/openNav.js"></script>
         <script src="{{ site.url }}{{ site.baseurl }}/js/openConsole.js"></script>
+        <script src="{{ site.url }}{{ site.baseurl }}/js/codeColor.js"></script>
     </body>
 </html>

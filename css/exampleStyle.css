@@ -75,6 +75,7 @@ header a.icon {
 /** MAIN **/
 #main {
   flex: 1;
+  height: 1px;
   display: grid;
   grid-template-columns: 13% 37% 50%;
   grid-template-rows: auto 39px;
@@ -131,6 +132,7 @@ header a.icon {
   padding: 10px;
   resize: none;
   flex: 1;
+  outline: none;
 }
 
 #exampleResult {

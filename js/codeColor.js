@@ -1,4 +1,4 @@
-const code = document.getElementById('code').querySelector('code')
+const code = document.getElementById('code')
 codeColor(code)
 
 function codeColor(element) {
