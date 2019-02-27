@@ -127,6 +127,11 @@ header a.icon {
 
 }
 
+#code {
+  font-size: .8rem;
+  white-space: pre-wrap;
+}
+
 .ffjs {
   border: none;
   padding: 10px;
