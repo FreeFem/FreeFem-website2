@@ -187,10 +187,12 @@ header a.icon {
 }
 
 #exampleConsole {
+  height: 39px;
   grid-column: 3;
   grid-row: 2;
   background-color: #F7F7F9;
-  overflow: auto;
+  overflow: hidden;
+  align-self: end;
 }
 
 #exampleConsole h2 {
@@ -199,6 +201,10 @@ header a.icon {
   font-size: 1rem;
   position: sticky;
   top: 0;
+}
+
+#exampleConsole h2:hover {
+  cursor: pointer;
 }
 
 #ffjs_stdout {

@@ -40,7 +40,7 @@ plot(Th);
               </canvas>
             </div>
             <div id="exampleConsole">
-              <h2>Console</h2>
+              <h2 onclick="openConsole()">Console</h2>
               <div id="ffjs_stdout" style="font-family:monospace;"></div>
             </div>
 
@@ -51,5 +51,6 @@ plot(Th);
         {% include footer.html %}
 
         <script src="{{ site.url }}{{ site.baseurl }}/js/openNav.js"></script>
+        <script src="{{ site.url }}{{ site.baseurl }}/js/openConsole.js"></script>
     </body>
 </html>
