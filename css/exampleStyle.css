@@ -75,10 +75,10 @@ header a.icon {
 /** MAIN **/
 #main {
   flex: 1;
-  height: 1px;
+  height: 1rem;
   display: grid;
   grid-template-columns: 13% 37% 50%;
-  grid-template-rows: auto 39px;
+  grid-template-rows: auto 2.4375rem;
   align-items: stretch;
 }
 
@@ -89,13 +89,13 @@ header a.icon {
 #exampleScripts {
   grid-column: 1;
   grid-row: 1/3;
-  border-right: 2px solid #EFEFEF;
+  border-right: .125rem solid #EFEFEF;
   background-color: #F7F7F9;
 }
 
 #exampleScripts h2 {
   background-color: #EFEFEF;
-  padding: 10px 20px;
+  padding: .625rem 1.25rem;
   font-size: 1rem;
   position: sticky;
   top: 0;
@@ -108,7 +108,7 @@ header a.icon {
 #exampleCode {
   grid-column: 2;
   grid-row: 1/3;
-  border-right: 2px solid #EFEFEF;
+  border-right: .125rem solid #EFEFEF;
   overflow: auto;
   display: flex;
   flex-direction: column;
@@ -116,7 +116,7 @@ header a.icon {
 
 #exampleCode h2 {
   background-color: #F7F7F9;
-  padding: 10px 20px;
+  padding: .625rem 1.25rem;
   font-size: 1rem;
   position: sticky;
   top: 0;
@@ -134,7 +134,7 @@ header a.icon {
 
 .ffjs {
   border: none;
-  padding: 10px;
+  padding: .625rem;
   resize: none;
   flex: 1;
   outline: none;
@@ -151,7 +151,7 @@ header a.icon {
 
 #exampleResult h2 {
   background-color: #F7F7F9;
-  padding: 10px 20px;
+  padding: .625rem 1.25rem;
   font-size: 1rem;
   position: sticky;
   top: 0;
@@ -167,7 +167,7 @@ header a.icon {
   position: absolute;
   z-index: 1;
   top: calc(50% - 40px);
-  left: calc(50% - 22px);
+  left: calc(50% - 30px);
 }
 
 #exampleResult button {
@@ -177,7 +177,7 @@ header a.icon {
   position: absolute;
   z-index: 2;
   top: calc(50% - 8px);
-  left: calc(50% - 20px);
+  left: calc(50% - 25px);
   background-color: transparent;
 }
 
@@ -194,7 +194,7 @@ header a.icon {
 }
 
 #exampleConsole {
-  height: 39px;
+  height: 2.4375rem;
   grid-column: 3;
   grid-row: 2;
   background-color: #F7F7F9;
@@ -204,7 +204,7 @@ header a.icon {
 
 #exampleConsole h2 {
   background-color: #EFEFEF;
-  padding: 10px 20px;
+  padding: .625rem 1.25rem;
   font-size: 1rem;
   position: sticky;
   top: 0;
@@ -215,7 +215,7 @@ header a.icon {
 }
 
 #ffjs_stdout {
-  padding: 10px;
+  padding: .625rem;
 }
 
 /** FOOTER **/
@@ -239,7 +239,7 @@ footer p, footer a, footer span {
     align-self: center;
     flex: 1 1 0;
     text-align: center;
-    margin: 20px 0;
+    margin: 1.25rem 0;
 }
 
 /** SCROLLBAR DESIGN **/

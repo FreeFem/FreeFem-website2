@@ -26,7 +26,13 @@
             </div>
             <div id="exampleCode" spellcheck="false">
               <h2>Code</h2>
+<<<<<<< HEAD
               <div class="ffjs" contenteditable="true" id="code"><pre><code>mesh Th=square(10, 10, flags=2);
+=======
+              <div class="ffjs" contenteditable="true" id="code">
+                <pre>
+mesh Th=square(10, 10, flags=2);
+>>>>>>> 3a075740a51f9555faff1492dfcf95930da677fc
 plot(Th);
 
 fespace Uh(Th, P1);
@@ -75,11 +81,19 @@ plot(u);</code></pre></div>
         <script src="{{ site.url }}{{ site.baseurl }}/js/codeColor.js"></script>
 		<script>
 			const code = document.getElementById('code')
+<<<<<<< HEAD
 			codeColor(code)
 
 			code.addEventListener('input', function(e) {
 				codeColor(code, e)
 			})
+=======
+      codeColor(code)
+      code.addEventListener("input", function() {
+        codeColor(code)
+        console.log("ok")
+      })
+>>>>>>> 3a075740a51f9555faff1492dfcf95930da677fc
 		</script>
     </body>
 </html>
