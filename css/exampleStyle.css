@@ -14,7 +14,7 @@ body {
     height: 100%;
     min-height: 100%;
     width: 100%;
-    max-width: 142.5rem;
+    max-width: 1440px;
     margin: auto;
     padding: 0;
     display: flex;
@@ -161,13 +161,13 @@ header a.icon {
 #exampleResult .arrow-right {
   width: 0;
   height: 0;
-  border-top: 2.5rem solid transparent;
-  border-bottom: 2.5rem solid transparent;
-  border-left: 3.75rem solid #00007F;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 60px solid #00007F;
   position: absolute;
   z-index: 1;
-  top: calc(50% - 2.5rem);
-  left: calc(50% - 2.125rem);
+  top: calc(50% - 40px);
+  left: calc(50% - 30px);
 }
 
 #exampleResult button {
@@ -177,7 +177,7 @@ header a.icon {
   position: absolute;
   z-index: 2;
   top: calc(50% - 8px);
-  left: calc(50% - 20px);
+  left: calc(50% - 25px);
   background-color: transparent;
 }
 
