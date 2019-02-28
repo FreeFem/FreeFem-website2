@@ -10,7 +10,7 @@
 	  <!-- <script ansy src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.3/ace.js"></script> -->
 	  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/codemirror.css">
 	  <script src="{{ site.url }}{{ site.baseurl }}/js/codemirror.js"></script>
-	  <script src="{{ site.url }}{{ site.baseurl }}/js/mode/clike/clike.js"></script>
+	  <script src="{{ site.url }}{{ site.baseurl }}/js/mode/freefem/freefem.js"></script>
       <title>{{ page.title }}</title>
     </head>
 
@@ -58,7 +58,7 @@ plot(u);</textarea>
 			  <script>
 			  	var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
 					lineNumbers: true,
-					mode: "text/x-c++src"
+					mode: "text/x-ff++src"
 				})
 			  </script>
 		    </div>
