@@ -7,6 +7,10 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,900" rel="stylesheet">
       <link rel="icon" href="{{ site.url }}{{ site.baseurl }}/img/FreeFEM_Symbol_592x592.png" />
+	  <!-- <script ansy src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.3/ace.js"></script> -->
+	  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/codemirror.css">
+	  <script src="{{ site.url }}{{ site.baseurl }}/js/codemirror.js"></script>
+	  <script src="{{ site.url }}{{ site.baseurl }}/js/mode/clike/clike.js"></script>
       <title>{{ page.title }}</title>
     </head>
 
@@ -27,7 +31,7 @@
             <div id="exampleCode" spellcheck="false">
               <h2>Code</h2>
 
-              <div class="ffjs" contenteditable="true" id="code"><pre><code>mesh Th=square(10, 10, flags=2);
+			  <textarea class="ffjs" id="code">mesh Th=square(10, 10, flags=2);
 plot(Th);
 
 fespace Uh(Th, P1);
@@ -37,10 +41,10 @@ macro grad(u)[dx(u), dy(u)]//
 
 varf vLaplacian (u, v)
 	= int2d(Th)(
-		  grad(u)' * grad(v)
+		grad(u)' * grad(v)
 	)
 	+ int2d(Th)(
-		  1. * v
+		1. * v
 	)
 	+ on(1, 2, 3, 4, u=0)
 	;
@@ -50,8 +54,14 @@ real[int] LaplacianRHS = vLaplacian(0, Uh);
 
 u[] = Laplacian^-1 * LaplacianRHS;
 
-plot(u);</code></pre></div>
-            </div>
+plot(u);</textarea>
+			  <script>
+			  	var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+					lineNumbers: true,
+					mode: "text/x-c++src"
+				})
+			  </script>
+		    </div>
             <div id="exampleResult">
               <h2>Result</h2>
               <div class="arrow-right"></div>
@@ -74,13 +84,5 @@ plot(u);</code></pre></div>
         <script src="{{ site.url }}{{ site.baseurl }}/js/openNav.js"></script>
         <script src="{{ site.url }}{{ site.baseurl }}/js/openConsole.js"></script>
         <script src="{{ site.url }}{{ site.baseurl }}/js/codeColor.js"></script>
-		<script>
-			const code = document.getElementById('code')
-			codeColor(code)
-
-			// code.addEventListener('input', function() {
-			// 	codeColor(code, true)
-			// })
-		</script>
     </body>
 </html>

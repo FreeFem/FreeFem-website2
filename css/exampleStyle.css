@@ -127,10 +127,19 @@ header a.icon {
 
 }
 
-#code {
+.CodeMirror {
+	flex: 1;
+    /* background-color: #EFEFEF;
+    height: 31.25rem;
+    overflow-y: auto;
+    min-width: 300px; */
+    font-size: 0.8rem;
+}
+
+/* #code {
   font-size: .8rem;
   white-space: pre-wrap;
-}
+} */
 
 .ffjs {
   border: none;
