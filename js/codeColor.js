@@ -45,7 +45,7 @@
 // }
 
 function codeColor(element, checkCaret) {
-	var elementText = element.textContent
+	var elementText = element.innerHTML
 
 	// if (checkCaret) {
 	// 	var caretPos = getCaretPosition(element)
