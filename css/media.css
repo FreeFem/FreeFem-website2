@@ -159,6 +159,7 @@
     width: unset !important;
     border-right: none !important;
     border-bottom: 2px solid #EFEFEF;
+    padding: 20px;
   }
 
   #ffdaysCal .days .program {

@@ -507,7 +507,9 @@ body::-webkit-scrollbar {
 #ffdaysCal .days .day {
   width: 30%;
   border-right: 2px solid #EFEFEF;
-  padding: 75px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #ffdaysCal .days .day p, #ffdaysCal .days .day h2 {
