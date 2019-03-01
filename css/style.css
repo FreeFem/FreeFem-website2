@@ -80,9 +80,13 @@ header a.icon {
   align-items: center;
 }
 
-#ffdaysImg {
+#banner a {
   grid-row: 1;
   grid-column: 1;
+  height: 40px;
+}
+
+#ffdaysImg {
   height: 40px;
 }
 
@@ -518,15 +522,16 @@ body::-webkit-scrollbar {
 
 #ffdaysCal .days .program {
   width: 70%;
-  padding: 10px 20px;
+  padding: 0 40px;
 }
 
-#ffdaysCal .days .program {
-  padding-bottom: 10px;
+#ffdaysCal .days .program h2 {
+  font-size: 2rem;
 }
 
 #ffdaysCal table {
   border-collapse: collapse;
+  margin-bottom: 40px;
 }
 
 #ffdaysCal table, #ffdaysCal th, #ffdaysCal td {
@@ -539,12 +544,8 @@ body::-webkit-scrollbar {
 }
 
 #ffdaysCal th, #ffdaysCal td {
-  padding: 10px;
+  padding: 12px;
 }
-
-/* #ffdaysCal td {
-  white-space: pre;
-} */
 
 #ffdaysCal tr:nth-child(even) {
   background-color: #F7F7F9;
