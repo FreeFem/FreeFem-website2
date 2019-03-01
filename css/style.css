@@ -33,9 +33,13 @@ a {
     color: #00007F;
 }
 
+a:hover {
+  color: #0000FF;
+}
+
 /** HEADER **/
 header {
-    min-height: 4.68rem;
+    min-height: 60px;
     display: flex;
     flex-direction: row;
     background-color: #FFF;
@@ -357,7 +361,7 @@ aside span {
 /** FOOTER **/
 footer {
     display: flex;
-    min-height: 4.5rem;
+    min-height: 60px;
     font-size: 1.25rem;
 }
 
@@ -456,6 +460,7 @@ body::-webkit-scrollbar {
 /** FREEFEM DAYS **/
 #ffdaysMain {
   background-color: #F7F7F9;
+  border-bottom: 2px solid #EFEFEF;
 }
 
 #ffdaysTitle {
@@ -476,6 +481,7 @@ body::-webkit-scrollbar {
   margin: 20px auto;
   padding: 10px 20px;
   text-align: center;
+  line-height: 23px;
 }
 
 #ffdaysDesc h2 {
@@ -501,18 +507,23 @@ body::-webkit-scrollbar {
 #ffdaysCal .days .day {
   width: 30%;
   border-right: 2px solid #EFEFEF;
-  padding: 30px 0;
+  padding: 75px 0;
 }
 
 #ffdaysCal .days .day p, #ffdaysCal .days .day h2 {
   text-align: center;
   margin: 0;
   color: #00007F;
-  /* font-weight: 700; */
+}
+
+#ffdaysCal .days .day p:not(:last-child) {
+  font-size: 20px;
+  line-height: 23px;
 }
 
 #ffdaysCal .days .day p:last-child {
   font-style: italic;
+  line-height: 19px;
   color: #444 !important;
 }
 
@@ -522,11 +533,13 @@ body::-webkit-scrollbar {
 
 #ffdaysCal .days .program {
   width: 70%;
-  padding: 0 40px;
+  padding: 0 60px;
 }
 
 #ffdaysCal .days .program h2 {
-  font-size: 2rem;
+  font-size: 40px;
+  margin: 20px 0;
+  font-weight: 900;
 }
 
 #ffdaysCal table {
@@ -544,7 +557,7 @@ body::-webkit-scrollbar {
 }
 
 #ffdaysCal th, #ffdaysCal td {
-  padding: 12px;
+  padding: 15px 25px;
 }
 
 #ffdaysCal tr:nth-child(even) {
@@ -553,6 +566,7 @@ body::-webkit-scrollbar {
 
 #ffdaysMap {
   margin: 20px 60px;
+  line-height: 23px;
 }
 
 #ffdaysMap iframe {
