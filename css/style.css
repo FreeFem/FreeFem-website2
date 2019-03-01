@@ -513,6 +513,7 @@ body::-webkit-scrollbar {
 #ffdaysCal .days .day p, #ffdaysCal .days .day h2 {
   text-align: center;
   margin: 0;
+  padding: 0 10px;
   color: #00007F;
 }
 
@@ -566,11 +567,13 @@ body::-webkit-scrollbar {
 
 #ffdaysMap {
   margin: 20px 60px;
-  line-height: 23px;
+  line-height: 26px;
+  font-size: 20px;
 }
 
 #ffdaysMap iframe {
   width: -webkit-fill-available;
+  width: 100%;
   border: none;
 }
 
