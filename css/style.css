@@ -362,6 +362,8 @@ body::-webkit-scrollbar {
 #galleryMain {
     display: flex;
     flex-direction: row;
+    align-items: stretch;
+    flex: 1;
 }
 
 #galleryTitle {
@@ -380,7 +382,7 @@ body::-webkit-scrollbar {
 }
 
 #galleryTitle ul a {
-  display: block;
+  display: unset !important;
 }
 
 #galleryTitle ul .wrap {
