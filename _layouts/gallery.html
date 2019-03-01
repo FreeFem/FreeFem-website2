@@ -69,12 +69,23 @@
             </ul>
           </div>
           <div id="galleryImg">
-
+            <ul id="menu">
+                  {% for module in site.modules %}
+                  <li>
+                    <a href="{{ site.url }}{{ site.baseurl }}{{ module.url}}" onclick="fetchModule(event, '{{ site.url }}{{ site.baseurl }}{{ module.url}}', '{{ module.title }}')">
+                      {{ module.name }}
+                    </a>
+                    <span class="hidden">{{ module.category }}</span>
+          					<script>
+          					addToTags('{{ module.category }}')
+          					</script>
+                  </li>
+                  {% endfor %}
+                </ul>
           </div>
         </section>
 
         {% include footer.html %}
         <script src="{{ site.url }}{{ site.baseurl }}/js/openNav.js"></script>
-		<script src="{{ site.url }}{{ site.baseurl }}/js/githubRelease.js"></script>
     </body>
 </html>

@@ -69,6 +69,44 @@ header a.icon {
   font-size: 1.56rem;
 }
 
+/** BANNER **/
+#banner {
+  height: 55px;
+  background-color: #00007F;
+  display: grid;
+  grid-template-columns: auto 20px;
+  grid-auto-rows: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+#ffdaysImg {
+  grid-row: 1;
+  grid-column: 1;
+  height: 40px;
+}
+
+#banner button {
+  grid-row: 1;
+  grid-column: 2;
+  background-color: transparent;
+  border: none;
+  justify-self: end;
+  margin-right: 20px;
+}
+
+#bannerCross {
+  height: 20px;
+}
+
+#banner button:hover {
+  cursor: pointer;
+}
+
+#banner button:focus {
+  outline: none;
+}
+
 /** MAIN **/
 #main {
     display: flex;
@@ -409,4 +447,119 @@ body::-webkit-scrollbar {
 
 #galleryTitle li.active .wrap div {
   display: block;
+}
+
+/** FREEFEM DAYS **/
+#ffdaysMain {
+  background-color: #F7F7F9;
+}
+
+#ffdaysTitle {
+  text-align: center;
+  color: #00007F;
+  font-size: 1.2rem;
+}
+
+#ffdaysTitle img {
+  height: 65px;
+  margin: 60px auto 30px auto;
+}
+
+#ffdaysDesc {
+  background-color: #FFF;
+  border: 2px solid #EFEFEF;
+  width: 60%;
+  margin: 20px auto;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+#ffdaysDesc h2 {
+  font-size: 2rem;
+}
+
+#ffdaysDesc p {
+  font-size: 1.2rem;
+}
+
+#ffdaysCal {
+  display: flex;
+  flex-direction: column;
+}
+
+#ffdaysCal .days {
+  background-color: #FFF;
+  border: 2px solid #EFEFEF;
+  margin: 20px 60px;
+  display: inline-flex;
+}
+
+#ffdaysCal .days .day {
+  width: 30%;
+  border-right: 2px solid #EFEFEF;
+  padding: 30px 0;
+}
+
+#ffdaysCal .days .day p, #ffdaysCal .days .day h2 {
+  text-align: center;
+  margin: 0;
+  color: #00007F;
+  /* font-weight: 700; */
+}
+
+#ffdaysCal .days .day p:last-child {
+  font-style: italic;
+  color: #444 !important;
+}
+
+#ffdaysCal .days .day h2 {
+  font-size: 80px;
+}
+
+#ffdaysCal .days .program {
+  width: 70%;
+  padding: 10px 20px;
+}
+
+#ffdaysCal .days .program {
+  padding-bottom: 10px;
+}
+
+#ffdaysCal table {
+  border-collapse: collapse;
+}
+
+#ffdaysCal table, #ffdaysCal th, #ffdaysCal td {
+  border: 2px solid #EFEFEF;
+}
+
+#ffdaysCal th {
+  white-space: nowrap;
+  text-align: left;
+}
+
+#ffdaysCal th, #ffdaysCal td {
+  padding: 10px;
+}
+
+/* #ffdaysCal td {
+  white-space: pre;
+} */
+
+#ffdaysCal tr:nth-child(even) {
+  background-color: #F7F7F9;
+}
+
+#ffdaysMap {
+  margin: 20px 60px;
+}
+
+#ffdaysMap iframe {
+  width: -webkit-fill-available;
+  border: none;
+}
+
+#ffdaysMap li {
+  list-style-type: none;
+  margin: 10px 0;
 }
