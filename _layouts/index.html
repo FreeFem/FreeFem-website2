@@ -1,19 +1,20 @@
 <!doctype html>
 <html lang="en">
-    {% include head.html %}
-    <body>
-        {% include header.html %}
+{% include head.html %}
 
-        <div id="banner">
-          <a href="{{ site.url }}{{ site.baseurl }}/ffdays.html">
-            <img src="{{ site.url }}{{ site.baseurl }}/img/FreeFem_Days_Blanc.svg" alt="freefem days" id="ffdaysImg"/>
-          </a>
-          <button class="banner-btn" onclick="closeBanner()"><img src="{{ site.url }}{{ site.baseurl }}/img/cross.svg" id="bannerCross"/></button>
-        </div>
-        <section id="main">
-            <article id="demo">
-                <div id="code">
-                  <pre><code>load "msh3"
+<body>
+  {% include header.html %}
+
+  <div id="banner">
+    <a href="{{ site.url }}{{ site.baseurl }}/ffdays.html">
+      <img src="{{ site.url }}{{ site.baseurl }}/img/FreeFem_Days_Blanc.svg" alt="freefem days" id="ffdaysImg" />
+    </a>
+    <button class="banner-btn" onclick="closeBanner()"><img src="{{ site.url }}{{ site.baseurl }}/img/cross.svg" id="bannerCross" /></button>
+  </div>
+  <section id="main">
+    <article id="demo">
+      <div id="code">
+        <pre><code>load "msh3"
 
 // Parameters
 func ue = 2.*x*x + 3.*y*y
@@ -66,107 +67,111 @@ load "iovtk"
 	        order=Order);
 }
                   </code></pre>
-                </div>
+      </div>
 
-                <div id="blank">
-					<video id="laplacianVideo" playsinline autoplay muted loop>
-						<source src="{{ site.url }}{{ site.baseurl }}/vid/sphere.webm" type="video/webm" />
-						<source src="{{ site.url }}{{ site.baseurl }}/vid/sphere.mp4" type="video/mp4" />
-						<img src="{{ site.url }}{{ site.baseurl }}/img/simulation_poisson_3d.jpg" alt="Poisson's equation 3D - Iso-surfaces of the solution">
-					</video>
-				</div>
-            </article>
+      <div id="blank">
+        <video id="laplacianVideo" playsinline autoplay muted loop>
+          <source src="{{ site.url }}{{ site.baseurl }}/vid/sphere.webm" type="video/webm" />
+          <source src="{{ site.url }}{{ site.baseurl }}/vid/sphere.mp4" type="video/mp4" />
+          <img src="{{ site.url }}{{ site.baseurl }}/img/simulation_poisson_3d.jpg" alt="Poisson's equation 3D - Iso-surfaces of the solution">
+        </video>
+      </div>
+    </article>
 
-            <article id="intro">
-                <h1>A high level multiphysics finite element software</h1>
-                <p>FreeFem++ offers a fast interpolation algorithm and a language for the manipulation of data on multiple meshes.</p>
-            </article>
-        </section>
+    <article id="intro">
+      <h1>A high level multiphysics finite element software</h1>
+      <p>FreeFem++ offers a fast interpolation algorithm and a language for the manipulation of data on multiple meshes.</p>
+    </article>
+  </section>
 
-        <aside>
-            <div id="release">RELEASE</div>
-            <div id="download"><a href="https://github.com/FreeFem/FreeFem-sources/releases" target="_blank">Download</a></div>
-            <div id="platforms">
-                <p><span><i class="fab fa-apple"></i> <i class="fab fa-linux"></i> <i class="fab fa-windows"></i></span>All platforms (LGPL)</p>
-            </div>
-        </aside>
+  <aside>
+    <div id="release">RELEASE</div>
+    <div id="download"><a href="https://github.com/FreeFem/FreeFem-sources/releases" target="_blank">Download</a></div>
+    <div id="platforms">
+      <p><span><i class="fab fa-apple"></i> <i class="fab fa-linux"></i> <i class="fab fa-windows"></i></span>All platforms (LGPL)</p>
+    </div>
+  </aside>
 
-        <section id="empty">GROS BLOC VIDE</section>
+  <section id="empty">GROS BLOC VIDE</section>
 
-        <section id="articles">
-            <h1>Latest Articles</h1>
-            <article id="artFirst">
-              <a href="{{ site.data.articles.articles[0].link }}" target="_blank">
-                <p>{{ site.data.articles.articles[0].date | date: '%B %d, %Y' }} | {{ site.data.articles.articles[0].authors }}</p>
-                <h2>{{ site.data.articles.articles[0].title }}</h2>
-                <p>
-                  {{ site.data.articles.articles[0].abstract }}
-                </p>
-              </a>
-            </article>
-            <article id="artSecond">
-              <a href="{{ site.data.articles.articles[1].link }}" target="_blank">
-                <p>{{ site.data.articles.articles[1].date | date: '%B %d, %Y' }} | {{ site.data.articles.articles[1].authors }}</p>
-                <h2>{{ site.data.articles.articles[1].title }}</h2>
-                <p>
-                  {{ site.data.articles.articles[1].abstract }}
-                </p>
-              </a>
-            </article>
-            <article id="artThird">
-              <a href="{{ site.data.articles.articles[2].link }}" target="_blank">
-                <p>{{ site.data.articles.articles[2].date | date: '%B %d, %Y' }} | {{ site.data.articles.articles[2].authors }}</p>
-                <h2>{{ site.data.articles.articles[2].title }}</h2>
-                <p>
-                  {{ site.data.articles.articles[2].abstract }}
-                </p>
-              </a>
-            </article>
-        </section>
+  <section id="articles">
+    <h1>Latest Articles</h1>
+    <article id="artFirst">
+      <a href="{{ site.data.articles.articles[0].link }}" target="_blank">
+        <p>{{ site.data.articles.articles[0].date | date: '%B %d, %Y' }} | {{ site.data.articles.articles[0].authors }}</p>
+        <h2>{{ site.data.articles.articles[0].title }}</h2>
+        <p>
+          {{ site.data.articles.articles[0].abstract }}
+        </p>
+      </a>
+    </article>
+    <article id="artSecond">
+      <a href="{{ site.data.articles.articles[1].link }}" target="_blank">
+        <p>{{ site.data.articles.articles[1].date | date: '%B %d, %Y' }} | {{ site.data.articles.articles[1].authors }}</p>
+        <h2>{{ site.data.articles.articles[1].title }}</h2>
+        <p>
+          {{ site.data.articles.articles[1].abstract }}
+        </p>
+      </a>
+    </article>
+    <article id="artThird">
+      <a href="{{ site.data.articles.articles[2].link }}" target="_blank">
+        <p>{{ site.data.articles.articles[2].date | date: '%B %d, %Y' }} | {{ site.data.articles.articles[2].authors }}</p>
+        <h2>{{ site.data.articles.articles[2].title }}</h2>
+        <p>
+          {{ site.data.articles.articles[2].abstract }}
+        </p>
+      </a>
+    </article>
+  </section>
 
-        <section id="info">
-            <section id="events">
-                <h1>Events</h1>
+  <section id="info">
+    <section id="events">
+      <h1>Events</h1>
 
-                <div class="event-grid">
-                  <div class="date">21 MARCH 2019</div>
-                  <h2 class="title">Conference 1 - Paris</h2>
-                  <p class="description">The 8th tutorial and Workshop on FreeFem++ (inscription here). Schedule, All Presentation, examples and directory this all data.<p/>
-                </div>
+      <div class="event-grid">
+        <div class="date">21 MARCH 2019</div>
+        <h2 class="title">Conference 1 - Paris</h2>
+        <p class="description">The 8th tutorial and Workshop on FreeFem++ (inscription here). Schedule, All Presentation, examples and directory this all data.
+          <p />
+      </div>
 
-                <div class="event-grid">
-                  <div class="date">22 AUGUST 2019</div>
-                  <h2 class="title">Conference 2 - Paris</h2>
-                  <p class="description">FreeFEM introduction conference<p/>
-                </div>
+      <div class="event-grid">
+        <div class="date">22 AUGUST 2019</div>
+        <h2 class="title">Conference 2 - Paris</h2>
+        <p class="description">FreeFEM introduction conference
+          <p />
+      </div>
 
-                <div class="event-grid">
-                  <div class="date">23 SEPTEMBER 2019</div>
-                  <h2 class="title">Conference 3 - Paris</h2>
-                  <p class="description">FreeFEM introduction conference<p/>
-                </div>
-            </section>
+      <div class="event-grid">
+        <div class="date">23 SEPTEMBER 2019</div>
+        <h2 class="title">Conference 3 - Paris</h2>
+        <p class="description">FreeFEM introduction conference
+          <p />
+      </div>
+    </section>
 
-            <section id="team">
-              <h1>You are in good company</h1>
-              <div>
-                <a href="http://www.sorbonne-universite.fr/" target="_blank"><img alt="Sorbonne université" src="{{ site.url }}{{ site.baseurl }}/img/logo_Sorbonne.svg"/></a>
-                <a href="https://www.inria.fr/" target="_blank"><img alt="INRIA" src="{{ site.url }}{{ site.baseurl }}/img/logo_INRIA_EN.svg"/></a>
-                <a href="http://www.agence-nationale-recherche.fr/" target="_blank"><img alt="ANR" src="{{ site.url }}{{ site.baseurl }}/img/logo_ANR.svg"/></a>
-                <a href="http://www.genci.fr/" target="_blank"><img alt="Genci" src="{{ site.url }}{{ site.baseurl }}/img/logo_Genci.jpg"/></a>
-				        <a href="http://www.cnrs.fr/" target="_blank"><img alt="CNRS" src="{{ site.url }}{{ site.baseurl }}/img/logo_CNRS.svg"/></a>
-              </div>
-            </section>
-        </section>
+    <section id="team">
+      <h1>You are in good company</h1>
+      <div>
+        <a href="http://www.sorbonne-universite.fr/" target="_blank"><img alt="Sorbonne université" src="{{ site.url }}{{ site.baseurl }}/img/logo_Sorbonne.svg" /></a>
+        <a href="https://www.inria.fr/" target="_blank"><img alt="INRIA" src="{{ site.url }}{{ site.baseurl }}/img/logo_INRIA_EN.svg" /></a>
+        <a href="http://www.agence-nationale-recherche.fr/" target="_blank"><img alt="ANR" src="{{ site.url }}{{ site.baseurl }}/img/logo_ANR.svg" /></a>
+        <a href="http://www.genci.fr/" target="_blank"><img alt="Genci" src="{{ site.url }}{{ site.baseurl }}/img/logo_Genci.jpg" /></a>
+        <a href="http://www.cnrs.fr/" target="_blank"><img alt="CNRS" src="{{ site.url }}{{ site.baseurl }}/img/logo_CNRS.svg" /></a>
+      </div>
+    </section>
+  </section>
 
-        {% include footer.html %}
-        <script src="{{ site.url }}{{ site.baseurl }}/js/codeColor.js"></script>
-    		<script>
-    			const code = document.getElementById('code')
-    			codeColor(code)
-    		</script>
-        <script src="{{ site.url }}{{ site.baseurl }}/js/openNav.js"></script>
-        <script src="{{ site.url }}{{ site.baseurl }}/js/closeBanner.js"></script>
-    		<script src="{{ site.url }}{{ site.baseurl }}/js/githubRelease.js"></script>
-    </body>
+  {% include footer.html %}
+  <script src="{{ site.url }}{{ site.baseurl }}/js/codeColor.js"></script>
+  <script>
+    const code = document.getElementById('code')
+    codeColor(code)
+  </script>
+  <script src="{{ site.url }}{{ site.baseurl }}/js/openNav.js"></script>
+  <script src="{{ site.url }}{{ site.baseurl }}/js/closeBanner.js"></script>
+  <script src="{{ site.url }}{{ site.baseurl }}/js/githubRelease.js"></script>
+</body>
+
 </html>

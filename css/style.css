@@ -361,7 +361,7 @@ aside span {
 /** FOOTER **/
 footer {
     display: flex;
-    min-height: 60px;
+    min-height: 3.75rem;
     font-size: 1.25rem;
 }
 
@@ -379,7 +379,7 @@ footer p, footer a, footer span {
     align-self: center;
     flex: 1 1 0;
     text-align: center;
-    margin: 20px 0;
+    margin: 1.125rem 0;
 }
 
 /** SCROLLBAR DESIGN **/
