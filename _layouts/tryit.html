@@ -10,7 +10,7 @@
   <link rel="icon" href="{{ site.url }}{{ site.baseurl }}/img/FreeFEM_Symbol_592x592.png" />
   <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/codemirror.css">
   <script src="{{ site.url }}{{ site.baseurl }}/js/codemirror.js"></script>
-  <script async src="{{ site.url }}{{ site.baseurl }}/js/mode/freefem/freefem.js"></script>
+  <script src="{{ site.url }}{{ site.baseurl }}/js/mode/freefem/freefem.js"></script>
   <script src="{{ site.url }}{{ site.baseurl }}/js/split-grid.min.js"></script>
   <title>{{ page.title }}</title>
 </head>
@@ -77,9 +77,7 @@ plot(u);</textarea>
       <h2 onclick="openConsole()">Console</h2>
       <div id="ffjs_stdout" class="is-invisible">Please click on the RUN button first.</div>
     </div>
-
     <!-- <div id="ffjs_stderr" style="font-family:monospace;"></div> -->
-
   </section>
 
   {% include footer.html %}
