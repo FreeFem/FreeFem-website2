@@ -567,6 +567,10 @@ body::-webkit-scrollbar {
   background-color: #F7F7F9;
 }
 
+.OSMap {
+  text-align: center !important;
+}
+
 #ffdaysMap {
   margin: 20px 60px;
   line-height: 26px;
@@ -574,7 +578,7 @@ body::-webkit-scrollbar {
 }
 
 #ffdaysMap iframe {
-  width: -webkit-fill-available;
+  height: 300px;
   width: 100%;
   border: none;
 }
