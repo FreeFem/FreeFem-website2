@@ -1,18 +1,27 @@
-let open = false;
+let consoleOpen = false;
+const mainDiv = document.getElementById('main')
+const exResult = document.getElementById('exampleResult')
+const exConsole = document.getElementById('exampleConsole')
+const stdoutDiv = exConsole.children[1];
+const exResultArrowDiv = exResult.children[1];
+const exResultArrow = exResultArrowDiv.children[0]
+const exResultText = exResultArrowDiv.children[1]
 
 function openConsole() {
-  const exConsole = document.getElementById('exampleConsole')
-  const temp = document.getElementById('main')
 
-  if (open) {
-    temp.style.gridTemplateRows = "auto 2.4375rem"
-    exConsole.style.height = "2.4375rem"
-    exConsole.style.overflow = "hidden"
-    open = false
+  // const exResultCanvas = exResult.children[3]
+
+  if (consoleOpen) {
+    mainDiv.style.gridTemplateRows = "1fr 1.875rem"
+    stdoutDiv.classList.toggle('is-invisible')
+    // exResultCanvas.classList.toggle('is-invisible')
+    exResultArrowDiv.classList.toggle('is-invisible')
+    consoleOpen = false
   } else {
-    temp.style.gridTemplateRows = "70% 30%"
-    exConsole.style.height = "100%"
-    exConsole.style.overflow = "auto"
-    open = true
+    stdoutDiv.classList.toggle('is-invisible')
+    // exResultCanvas.classList.toggle('is-invisible')
+    exResultArrowDiv.classList.toggle('is-invisible')
+    mainDiv.style.gridTemplateRows = "1.875rem 1fr"
+    consoleOpen = true
   }
 }

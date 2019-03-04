@@ -3,67 +3,64 @@
 
 /** GLOBAL **/
 html {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
 }
 
 body {
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
-    max-width: 1440px;
-    margin: auto;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    color: #444;
-    position: relative;
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
+  height: 100%;
+  max-width: 1440px;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  color: #444;
+  position: relative;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
 }
 
-body > section {
-    border-bottom: 0.125rem solid #EFEFEF;
+body>section {
+  border: 0.125rem solid #EFEFEF;
+  border-top: 0;
 }
 
 a {
-    text-decoration: none;
-    color: #00007F;
+  text-decoration: none;
+  color: #00007F;
 }
 
 /** HEADER **/
 header {
-    min-height: 4.68rem;
-    display: flex;
-    flex-direction: row;
-    background-color: #FFF;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    border-bottom: 0.125rem solid #EFEFEF;
-    position: sticky;
-  	top: 0;
-    z-index: 1;
+  min-height: 4.68rem;
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 auto;
+  order: 0;
+  background-color: #FFF;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-bottom: 0.125rem solid #EFEFEF;
+  z-index: 6;
 }
 
 header img {
-    height: 2.5rem;
-    margin: 0 3.75rem;
+  height: 2.5rem;
+  margin: 0 3.75rem;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-right: 3.75rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-right: 3.75rem;
 }
 
 nav a {
-    margin-left: 3.25rem;
+  margin-left: 3.25rem;
 }
 
 header a.icon {
@@ -74,12 +71,12 @@ header a.icon {
 
 /** MAIN **/
 #main {
-  flex: 1;
-  height: 1rem;
+  flex: 1 1 auto;
+  order: 2;
   display: grid;
-  grid-template-columns: 13% 37% 50%;
-  grid-template-rows: auto 2.4375rem;
-  align-items: stretch;
+  grid-template-columns: 1fr 2px 3fr 2px 3fr;
+  grid-template-rows: 1fr 1.875rem;
+  min-height: 3.75rem;
 }
 
 #main h2 {
@@ -89,26 +86,37 @@ header a.icon {
 #exampleScripts {
   grid-column: 1;
   grid-row: 1/3;
-  border-right: .125rem solid #EFEFEF;
   background-color: #F7F7F9;
+  overflow: auto;
 }
 
 #exampleScripts h2 {
   background-color: #EFEFEF;
-  padding: .625rem 1.25rem;
+  padding: .25rem 1.125rem;
   font-size: 1rem;
   position: sticky;
   top: 0;
+  align-self: stretch;
+  line-height: 1.25rem;
 }
 
 #exampleLinks {
   overflow-y: auto;
 }
 
-#exampleCode {
+.gutter {
+  cursor: ew-resize;
+  background-color: #EFEFEF;
+}
+
+#gutter1 {
   grid-column: 2;
   grid-row: 1/3;
-  border-right: .125rem solid #EFEFEF;
+}
+
+#exampleCode {
+  grid-column: 3;
+  grid-row: 1/3;
   overflow: auto;
   display: flex;
   flex-direction: column;
@@ -116,58 +124,79 @@ header a.icon {
 
 #exampleCode h2 {
   background-color: #F7F7F9;
-  padding: .625rem 1.25rem;
+  padding: .25rem 1.125rem;
   font-size: 1rem;
   position: sticky;
   top: 0;
+  align-self: stretch;
+  line-height: 1.25rem;
+  border-bottom: .125rem solid #F7F7F9;
 }
 
 #codeArea {
   overflow: auto !important;
-
 }
 
 .CodeMirror {
-	flex: 1;
-    /* background-color: #EFEFEF;
+  flex: 1;
+  /* background-color: #EFEFEF;
     height: 31.25rem;
     overflow-y: auto;
     min-width: 300px; */
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 /* #code {
   font-size: .8rem;
   white-space: pre-wrap;
 } */
-
 .ffjs {
   border: none;
-  padding: .625rem;
   resize: none;
   flex: 1;
   outline: none;
 }
 
+#gutter2 {
+  grid-column: 4;
+  grid-row: 1/3;
+}
+
 #exampleResult {
-  grid-column: 3;
-  grid-row: 1;
-  position: relative;
+  grid-column: 5;
+  grid-row: 1/2;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  overflow: auto;
 }
 
 #exampleResult h2 {
+  flex: 0 0 auto;
   background-color: #F7F7F9;
-  padding: .625rem 1.25rem;
+  padding: .25rem 1.125rem;
   font-size: 1rem;
-  position: sticky;
   top: 0;
-  align-self: stretch;
+  line-height: 1.25rem;
+  border-bottom: .125rem solid #F7F7F9;
 }
 
-#exampleResult .arrow-right {
+#resultContainer {
+  flex: 1 1 auto;
+  position: relative;
+  display: inline-block;
+  overflow-x: hidden;
+}
+
+#exampleResult #arrow {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#exampleResult #arrow-right {
   width: 0;
   height: 0;
   border-top: 40px solid transparent;
@@ -175,48 +204,56 @@ header a.icon {
   border-left: 60px solid #00007F;
   position: absolute;
   z-index: 1;
-  top: calc(50% - 40px);
-  left: calc(50% - 30px);
 }
 
-#exampleResult button {
+#exampleResult #arrow-right:hover {
+  border-left-color: #0000FF;
+  cursor: pointer;
+}
+
+#exampleResult #arrow-text {
   border: none;
   color: white;
   font-weight: 700;
   position: absolute;
   z-index: 2;
-  top: calc(50% - 8px);
-  left: calc(50% - 25px);
   background-color: transparent;
+  pointer-events: none;
+  left: calc(100%/2 - 24px);
 }
 
-#exampleResult button:hover {
-  cursor: pointer;
+#exampleResult #arrow-text:focus {
+  outline: none;
 }
 
-#exampleResult button:focus {
-	outline: none;
-}
-
-#exampleResult canvas {
-  margin: auto;
+.ffjs_graph {
+  height: calc(100% - 1.875rem) !important;
+  position: absolute;
+  top: 0;
+  padding-bottom: 1.875rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #exampleConsole {
-  height: 2.4375rem;
-  grid-column: 3;
-  grid-row: 2;
+  grid-column: 5;
+  grid-row: 2/3;
   background-color: #F7F7F9;
   overflow: hidden;
-  align-self: end;
+  display: flex;
+  flex-direction: column;
 }
 
 #exampleConsole h2 {
-  background-color: #EFEFEF;
-  padding: .625rem 1.25rem;
+  background-color: #F7F7F9;
+  padding: .25rem 1.125rem;
+  border: .125rem solid #EFEFEF;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0;
   font-size: 1rem;
-  position: sticky;
-  top: 0;
+  line-height: 1.25rem;
+  order: 0;
 }
 
 #exampleConsole h2:hover {
@@ -225,17 +262,27 @@ header a.icon {
 
 #ffjs_stdout {
   padding: .625rem;
+  font-family: monospace;
+  order: 1;
+  overflow: scroll;
+  ;
+}
+
+.is-invisible {
+  display: none !important;
 }
 
 /** FOOTER **/
 footer {
-    display: flex;
-    min-height: 4.5rem;
-    font-size: 1.25rem;
+  display: flex;
+  flex: 0 0 auto;
+  order: 3;
+  min-height: 4.5rem;
+  font-size: 1.25rem;
 }
 
 footer i {
-    color: #FF699B;
+  color: #FF699B;
 }
 
 footer img {
@@ -245,15 +292,15 @@ footer img {
 }
 
 footer p, footer a, footer span {
-    align-self: center;
-    flex: 1 1 0;
-    text-align: center;
-    margin: 1.25rem 0;
+  align-self: center;
+  text-align: center;
+  margin: 1.25rem 0;
+  flex: 1 1 0;
 }
 
 /** SCROLLBAR DESIGN **/
 body::-webkit-scrollbar {
-	width: .55rem;
+  width: .55rem;
 }
 
 ::-webkit-scrollbar {
