@@ -34,6 +34,10 @@ a {
   color: #00007F;
 }
 
+a:hover {
+    color: #0000FF;
+}
+
 /** HEADER **/
 header {
   min-height: 3.75rem;
@@ -286,6 +290,7 @@ footer {
 
 footer i {
   color: #FF699B;
+  font-size: 1.1rem;
 }
 
 footer img {
