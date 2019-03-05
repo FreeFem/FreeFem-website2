@@ -22,6 +22,8 @@ body {
     position: relative;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 body > section {
@@ -76,11 +78,10 @@ header a.icon {
 
 /** BANNER **/
 #banner {
-  height: 55px;
   background-color: #00007F;
   display: grid;
   grid-template-columns: auto 20px;
-  grid-auto-rows: auto;
+  grid-auto-rows: 3.5rem;
   justify-items: center;
   align-items: center;
 }
@@ -88,11 +89,11 @@ header a.icon {
 #banner a {
   grid-row: 1;
   grid-column: 1;
-  height: 40px;
+  padding: 0.5rem;
 }
 
 #ffdaysImg {
-  height: 40px;
+  height: 2.5rem;
 }
 
 #banner button {
