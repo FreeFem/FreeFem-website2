@@ -270,7 +270,7 @@ aside span {
 }
 
 #articles h2 {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 #articles article {
@@ -429,7 +429,7 @@ body::-webkit-scrollbar {
 }
 
 #galleryTitle {
-  width: 30%;
+  width: 40%;
   background-color: #F7F7F9;
   border-right: 2px solid #EFEFEF;
 }
@@ -459,14 +459,37 @@ body::-webkit-scrollbar {
 
 #galleryTitle li {
   background-color: #FFF;
-  border: 2px solid #EFEFEF;
-  margin: 10px;
-  padding: 10px;
+  border: 0.125rem solid #EFEFEF;
+  margin: 1rem 1rem 0 1rem;
+  padding: 0.625rem;
+}
+
+#galleryTitle li a {
+  color: #444;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+#galleryTitle li a:hover {
+  color: #0000FF;
+}
+
+#galleryTitle li p a {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+#galleryTitle li p a:hover {
+  color: #0000FF;
 }
 
 #galleryTitle li.active {
   display: flex;
   flex: 1 1 auto;
+}
+
+#galleryTitle li.active a {
+  color: #00007F !important
 }
 
 #galleryTitle li.active .wrap div {
