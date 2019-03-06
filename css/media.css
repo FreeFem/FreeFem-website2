@@ -3,6 +3,7 @@
     width: 35% !important;
     min-width: unset !important;
   }
+
   #blank {
     width: 65% !important;
   }
@@ -13,32 +14,40 @@
   #main {
     flex-direction: column !important;
   }
+
   #intro {
     order: 1;
     width: 100% !important;
     height: unset !important;
-    margin-bottom: 3.75rem !important;
+    margin-bottom: 0.5rem !important;
     padding-left: 0 !important;
   }
+
   #demo {
     order: 2;
     width: 100% !important;
   }
+
   #blank video {
     width: 100% !important;
   }
+
   #platforms, #release, #download {
     margin: 10px !important;
   }
+
   #articles {
     display: block !important;
   }
+
   #articles article {
     margin-bottom: 1.875rem !important;
   }
+
   #artFirst, #artSecond {
     margin-right: 0 !important;
   }
+
   .top-nav {
     width: 0;
     overflow: hidden;
@@ -46,13 +55,16 @@
     position: absolute;
     top: 60px;
     background-color: #FFF;
-    border-bottom: 0.125rem solid #EFEFEF;;
+    border-bottom: 0.125rem solid #EFEFEF;
+    ;
   }
+
   .top-nav a {
     text-align: left !important;
     margin-left: 3.75rem;
     padding-bottom: 1.25rem;
   }
+
   header a.icon {
     float: right;
     display: block !important;
@@ -64,26 +76,37 @@
   header img {
     margin: 0 1.25rem !important;
   }
+
+  #banner button {
+    margin-right: 1.25rem !important;
+    padding: 0 !important;
+  }
+
   #main {
     padding: 1.25rem !important;
   }
+
   #demo {
     flex-direction: column !important;
     width: 100% !important;
   }
+
   #blank {
     order: 1;
     width: 100% !important;
   }
+
   #code {
     order: 2;
     width: 100% !important;
     height: 100% !important;
   }
+
   aside {
     flex-direction: column !important;
     min-height: 15.625rem;
   }
+
   aside p {
     margin: 0 !important;
   }
@@ -114,8 +137,8 @@
   }
 
   .event-grid {
-	grid-template-rows: auto auto !important;
-    margin : 0 1.25rem !important;
+    grid-template-rows: auto auto !important;
+    margin: 0 1.25rem !important;
   }
 
   #team {
@@ -152,7 +175,6 @@
     display: flex !important;
     flex-direction: column;
     margin: 20px 10px !important;
-
   }
 
   #ffdaysCal .days .day {
@@ -176,8 +198,6 @@
     white-space: nowrap;
     border: none !important;
   }
-
-
 
   footer {
     flex-direction: column !important;
