@@ -53,7 +53,7 @@
     overflow: hidden;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 3.75rem;
     background-color: #FFF;
     border-bottom: 0.125rem solid #EFEFEF;
     padding: 1.25rem 0;
@@ -62,7 +62,13 @@
   .top-nav a {
     text-align: left !important;
     margin: 0 auto 0 3.75rem;
-    padding-bottom: 1.25rem;
+    padding: 0.75rem 0;
+  }
+
+  #donate {
+    border-top: 0.75rem solid transparent;
+    background-clip: padding-box;
+    border-bottom: 0.75rem solid transparent;
   }
 
   header a.icon {
