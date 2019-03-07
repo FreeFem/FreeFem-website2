@@ -470,17 +470,10 @@ body::-webkit-scrollbar {
   font-weight: 700;
 }
 
-#galleryTitle li a:hover {
-  color: #0000FF;
-}
 
 #galleryTitle li p a {
   font-size: inherit;
   font-weight: inherit;
-}
-
-#galleryTitle li p a:hover {
-  color: #0000FF;
 }
 
 #galleryTitle li.active {
@@ -489,7 +482,11 @@ body::-webkit-scrollbar {
 }
 
 #galleryTitle li.active a {
-  color: #00007F !important
+  color: #00007F;
+}
+
+#galleryTitle li a:hover {
+  color: #0000FF;
 }
 
 #galleryTitle li.active .wrap div {
