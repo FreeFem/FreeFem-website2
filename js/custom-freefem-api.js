@@ -25,6 +25,34 @@
 
 
 // <<ffjs_reset>> clear the whole page, back to initial script
+
+let stdout = document.getElementById('ffjs_stdout');
+let stdoutText = '';
+let stderrText = '';
+let stderr = document.getElementById('ffjs_stderr');
+let arrow =  document.getElementById('arrow');
+let arrowText = document.getElementById('arrow-text');
+let arrowSpinner = document.getElementById('arrow-spinner');
+let arrowReload = document.getElementById('arrow-reload');
+
+
+function ffjs_clear_stdout() {
+  stdout.textContent = '';
+}
+
+function ffjs_clear_stderr() {
+  stderr.textContent = '';
+}
+
+function ffjs_add_stdout(text) {
+  stdoutText = stdoutText + text + '<br/>';
+
+}
+
+function ffjs_add_stderr(text) {
+  stderrText = stderrText + text + '<br/>';
+}
+
 function ffjs_reset() {
 
   // [[http://www.w3schools.com/js/js_popup.asp]]
@@ -71,18 +99,26 @@ function ffjs_export(name) {
 // <<<ffjs_evaluate>>> run FreeFem++ evaluations
 function ffjs_evaluate() {
 
-  //clear console stdout
-  document.getElementById('ffjs_stdout').value = '';
+  ffjs_clear_stdout()
+  ffjs_clear_stderr()
 
-  //clear console stderr (not currently implemented)
-  // document.getElementById('ffjs_stderr').textContent = '';
+  arrowText.classList.add('is-invisible')
+  arrowSpinner.classList.remove('is-invisible')
+  console.log('spinner ok')
 
-  console.log("ffjs_evaluate: Running FreeFem++...");
+  window.setTimeout(function() {
+    console.log("ffjs_evaluate: Running FreeFem++...")
+    ffjs_callcxx(ffjs_extract_script())
+    console.log("ffjs_evaluate: FreeFem++ complete.")
 
-  // run FF [[file:pre.js::ffjs_callcxx]]
-  ffjs_callcxx(ffjs_extract_script());
+    //console output
+    stdout.innerHTML = stdoutText
+    stderr.innerHTML = stderrText
 
-  console.log("ffjs_evaluate: FreeFem++ complete.");
+    arrowSpinner.classList.add('is-invisible')
+    arrow.classList.add('is-invisible')
+  }, 50);
+
 }
 
 // <<ffjs_listgraphs>> receives graph file names from [[file:util.cpp::listgraphs]] character by character when FF calls
