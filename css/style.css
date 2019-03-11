@@ -4,13 +4,14 @@
 /** GLOBAL **/
 html {
   width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   font-size: 16px;
 }
 
 body {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   max-width: 1440px;
   margin: auto;
@@ -426,6 +427,7 @@ body::-webkit-scrollbar {
   flex-direction: row;
   align-items: stretch;
   flex: 1;
+  max-height: calc(100vh - 60px - 4rem);
 }
 
 #galleryTitle {
@@ -491,6 +493,29 @@ body::-webkit-scrollbar {
 
 #galleryTitle li.active .wrap div {
   display: block;
+}
+
+#galleryImg {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: auto;
+}
+
+#galleryImg table {
+	max-width: 90%;
+	text-align: center;
+	margin-bottom: 1rem;
+	box-shadow: 2px 2px 2px grey;
+}
+
+#galleryImg tbody {
+	font-weight: bold;
+}
+
+#galleryImg img {
+	max-width: 90%;
 }
 
 /** FREEFEM DAYS **/
