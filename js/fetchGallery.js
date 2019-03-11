@@ -1,15 +1,27 @@
 window.addEventListener('popstate', function(event) {
 	if (history.state) {
-		fetchGallery(event, history.state.url, history.state.title, true)
 		event.preventDefault()
 		event.stopPropagation()
+
+		const url = history.state.url
+		fetchGallery(event, url, history.state.title, true)
+
+		// Find good link
+		const galleryTitle = document.getElementById('galleryTitle')
+		const links = galleryTitle.getElementsByTagName('a')
+
+		for (let i = 0; i < links.length; i++)
+			if (links[i].href === url)
+				links[i].parentNode.parentNode.classList.add('active')
+			else
+				links[i].parentNode.parentNode.classList.remove('active')
 	}
 })
 
 function fetchGallery(e, url, title, disableHistory) {
 	if (e)
 		e.preventDefault()
-		
+
 	fetch(url)
 		.then(function(response) {
 			return response.text()
@@ -34,10 +46,7 @@ function fetchGallery(e, url, title, disableHistory) {
 			// Relaunch MathJax
 			try{
 				MathJax.Hub.Queue(["Typeset",MathJax.Hub])
-			} catch (error) {
-				console.log('MathJax disabled');
-				console.log(error)
-			}
+			} catch (error) {}
 		})
 		.catch(function(err) {
 			console.log('Failed to fetch page: ', err)
@@ -45,13 +54,11 @@ function fetchGallery(e, url, title, disableHistory) {
 }
 
 function activateGallery(elmt) {
-	const elmtToActivate = elmt.parentNode.parentNode
-
 	const galleryTitle = document.getElementById('galleryTitle')
 	const list = galleryTitle.getElementsByTagName('li')
 
 	for (let i = 0; i < list.length; i++) {
 		list[i].classList.remove('active')
 	}
-	elmtToActivate.classList.add('active')
+	elmt.classList.add('active')
 }
