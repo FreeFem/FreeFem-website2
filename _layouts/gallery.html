@@ -5,6 +5,8 @@
 <body>
   {% include header.html %}
 
+	<script src="{{ site.url }}{{ site.baseurl }}/js/fetchGallery.js"></script>
+
   <section id="galleryMain">
     <div id="galleryTitle">
       <ul>
@@ -85,7 +87,7 @@
 
   {% include footer.html %}
   <script src="{{ site.url }}{{ site.baseurl }}/js/openNav.js"></script>
-  <script src="{{ site.url }}{{ site.baseurl }}/js/fetchGallery.js"></script>
+
 	<script>
 	if (!history.state) {
 		const url = window.location.href

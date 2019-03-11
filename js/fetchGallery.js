@@ -7,7 +7,9 @@ window.addEventListener('popstate', function(event) {
 })
 
 function fetchGallery(e, url, title, disableHistory) {
-	e.preventDefault()
+	if (e)
+		e.preventDefault()
+		
 	fetch(url)
 		.then(function(response) {
 			return response.text()
