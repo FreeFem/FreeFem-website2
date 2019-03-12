@@ -12,7 +12,7 @@ function openConsole() {
   // const exResultCanvas = exResult.children[3]
 
   if (consoleOpen) {
-    mainDiv.style.gridTemplateRows = "1fr 1.875rem"
+    mainDiv.style.gridTemplateRows = "calc(100% - 1.875rem) 1.875rem"
     stdoutDiv.classList.toggle('is-invisible')
     // exResultCanvas.classList.toggle('is-invisible')
     exResultArrowDiv.classList.toggle('is-invisible')
@@ -21,7 +21,7 @@ function openConsole() {
     stdoutDiv.classList.toggle('is-invisible')
     // exResultCanvas.classList.toggle('is-invisible')
     exResultArrowDiv.classList.toggle('is-invisible')
-    mainDiv.style.gridTemplateRows = "1.875rem 1fr"
+    mainDiv.style.gridTemplateRows = "1.875rem calc(100% - 1.875rem)"
     consoleOpen = true
   }
 }

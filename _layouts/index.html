@@ -5,12 +5,8 @@
 <body>
   {% include header.html %}
 
-  <div id="banner">
-    <a href="{{ site.url }}{{ site.baseurl }}/ffdays.html">
-      <img src="{{ site.url }}{{ site.baseurl }}/img/FreeFem_Days_Blanc.svg" alt="freefem days" id="ffdaysImg" />
-    </a>
-    <button class="banner-btn" onclick="closeBanner()"><img src="{{ site.url }}{{ site.baseurl }}/img/cross.svg" id="bannerCross" /></button>
-  </div>
+  {% include banner.html %}
+
   <section id="main">
     <article id="demo">
       <div id="code">

@@ -13,8 +13,7 @@ html {
 body {
   min-height: 100%;
   width: 100%;
-  max-width: 1440px;
-  margin: auto;
+  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -27,7 +26,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-body>section {
+body > section {
   border-bottom: 0.125rem solid #EFEFEF;
 }
 
@@ -52,6 +51,7 @@ header {
   border-bottom: 0.125rem solid #EFEFEF;
   position: sticky;
   top: 0;
+  padding: 0 calc((100% - 1200px)/2);
 }
 
 header img {
@@ -92,6 +92,7 @@ header a.icon {
   grid-auto-rows: auto;
   justify-items: center;
   align-items: center;
+  padding: 0 calc((100% - 1200px)/2);
 }
 
 #banner a {
@@ -128,12 +129,13 @@ header a.icon {
 
 /** MAIN **/
 #main {
+	flex: 1;
   display: flex;
   flex-direction: row;
   background-color: #F7F7F9;
   align-items: stretch;
   justify-content: space-between;
-  padding: 1.875rem;
+  padding: 1.875rem calc((100% - 1200px)/2);
 }
 
 #demo {
@@ -196,8 +198,8 @@ aside {
   font-weight: 300;
   color: #00007F;
   text-align: center;
-  min-width: 100%;
   border-bottom: 0.125rem solid #EFEFEF;
+  padding: 0 calc((100% - 1200px)/2);
 }
 
 aside i {
@@ -242,7 +244,7 @@ aside span {
 /** EMPTY BLOC**/
 #empty {
   text-align: center;
-  padding: 6.25rem;
+  padding: 6.25rem calc((100% - 1200px)/2);
 }
 
 /** ARTICLES **/
@@ -250,7 +252,7 @@ aside span {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
-  padding: 3.75rem;
+  padding: 3.75rem calc((100% - 1200px)/2);
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   column-gap: 2.625rem;
 }
@@ -293,6 +295,7 @@ aside span {
 #info {
   display: flex;
   flex-direction: row;
+  padding: 0 calc((100% - 1200px)/2);
 }
 
 #info .event {
@@ -379,6 +382,7 @@ footer {
   display: flex;
   min-height: 3.75rem;
   font-size: 1.25rem;
+  padding: 0 calc((100% - 1200px)/2);
 }
 
 footer i {
