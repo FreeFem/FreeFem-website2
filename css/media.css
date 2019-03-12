@@ -1,16 +1,14 @@
-@media screen and (max-width:1200px) {
-  #code {
-    width: 35% !important;
-    min-width: unset !important;
-  }
-
-  #blank {
-    width: 65% !important;
-  }
-}
-
 /** FOR TABLETS **/
-@media screen and (max-width:800px) {
+@media screen and (max-width:1200px) {
+	/* #code {
+      width: 35% !important;
+      min-width: unset !important;
+  } */
+
+    /* #blank {
+      width: 65% !important;
+    } */
+
   #main {
     flex-direction: column !important;
   }
