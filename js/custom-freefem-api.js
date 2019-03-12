@@ -111,6 +111,10 @@ function ffjs_evaluate() {
     ffjs_callcxx(ffjs_extract_script())
     console.log("ffjs_evaluate: FreeFem++ complete.")
 
+	//TODO buggy stuff
+	const ffjsGraph = document.getElementsByClassName('ffjs_graph')
+	ffjsGraph[0].style.height = 'unset'
+
     //console output
     stdout.innerHTML = stdoutText
     stderr.innerHTML = stderrText
