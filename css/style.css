@@ -497,6 +497,7 @@ body::-webkit-scrollbar {
 
 #galleryTitle li.active .wrap div {
   display: block;
+  overflow: auto;
 }
 
 #galleryImg {
