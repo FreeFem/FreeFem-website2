@@ -518,6 +518,7 @@ body::-webkit-scrollbar {
 #galleryTitle li.active {
   display: flex;
   flex: 1 1 auto;
+  overflow: auto;
 }
 
 #galleryTitle li.active a {
