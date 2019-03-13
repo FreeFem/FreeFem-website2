@@ -1,27 +1,32 @@
 let consoleOpen = false;
-const mainDiv = document.getElementById('exampleMain')
+const exMain = document.getElementById('exampleMain')
 const exResult = document.getElementById('exampleResult')
 const exConsole = document.getElementById('exampleConsole')
 const stdoutDiv = exConsole.children[1];
 const exResultArrowDiv = exResult.children[1];
-const exResultArrow = exResultArrowDiv.children[0]
-const exResultText = exResultArrowDiv.children[1]
 
-function openConsole() {
+openConsole = () => {
+	let media = false
+	const template = window.getComputedStyle(exMain).gridTemplateRows
+	const tList = template.split(' ')
+	if (tList.length > 2)
+		media = true
 
-  // const exResultCanvas = exResult.children[3]
+	console
 
-  if (consoleOpen) {
-    mainDiv.style.gridTemplateRows = "calc(100% - 1.875rem) 1.875rem"
-    stdoutDiv.classList.toggle('is-invisible')
-    // exResultCanvas.classList.toggle('is-invisible')
-    exResultArrowDiv.classList.toggle('is-invisible')
-    consoleOpen = false
-  } else {
-    stdoutDiv.classList.toggle('is-invisible')
-    // exResultCanvas.classList.toggle('is-invisible')
-    exResultArrowDiv.classList.toggle('is-invisible')
-    mainDiv.style.gridTemplateRows = "1.875rem calc(100% - 1.875rem)"
-    consoleOpen = true
-  }
+	if (consoleOpen) {
+		if (!media) {
+			exMain.style.gridTemplateRows = "calc(100% - 1.875rem) 1.875rem"
+			exResultArrowDiv.classList.toggle('is-invisible')
+		}
+		stdoutDiv.classList.toggle('is-invisible')
+		consoleOpen = false
+	} else {
+		stdoutDiv.classList.toggle('is-invisible')
+		if (!media) {
+			exMain.style.gridTemplateRows = "1.875rem calc(100% - 1.875rem)"
+			exResultArrowDiv.classList.toggle('is-invisible')
+		}
+		consoleOpen = true
+	}
 }
