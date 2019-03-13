@@ -1,4 +1,1 @@
-function closeBanner() {
-  const banner = document.getElementById('banner');
-  banner.style.display = 'none';
-}
+closeBanner = (banner) => { banner.style.display = 'none'; }

@@ -1,6 +1,6 @@
-let opened = false;
+let navOpened = false;
 
-function openNav() {
+openNav = () => {
   const nav = document.getElementById('topNav')
   const navButton = document.getElementById('nav-button')
 
