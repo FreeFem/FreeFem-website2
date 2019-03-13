@@ -242,10 +242,36 @@ aside span {
   display: block;
 }
 
-/** EMPTY BLOC**/
-#empty {
+/** CONTENT BLOC**/
+#content {
   text-align: center;
-  padding: 6.25rem calc((100% - 1200px)/2);
+  /* padding: 0 calc((100% - 1200px)/2); */
+}
+
+#content article {
+	display: block;
+	padding: 1rem calc((100% - 1200px)/2);
+	margin: 1rem;
+	background-color: #F7F7F9;
+	text-align: justify;
+}
+
+#content article h2 {
+	margin: 0.55rem;
+}
+
+#content article.content-left {
+	padding-right: 1rem;
+	margin-right: calc(50%/2);
+}
+
+#content article.content-left h2 {
+	text-align :right;
+}
+
+#content article.content-right {
+	padding-left: 1rem;
+	margin-left: calc(50%/2);
 }
 
 /** ARTICLES **/
