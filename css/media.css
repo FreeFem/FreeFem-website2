@@ -232,6 +232,10 @@
 	  width: unset !important;
   }
 
+  #galleryTitle  li {
+	  margin: 0.55rem !important;
+  }
+
   #galleryImg {
 	  width: unset !important;
   }
