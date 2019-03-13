@@ -251,7 +251,7 @@ aside span {
 #content article {
 	display: block;
 	padding: 1rem calc((100% - 1200px)/2);
-	margin: 1rem;
+	margin-bottom: 1rem;
 	background-color: #F7F7F9;
 	text-align: justify;
 }
