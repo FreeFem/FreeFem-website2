@@ -94,11 +94,6 @@
     padding: 1.25rem !important;
   }
 
-  /* .main-tryit {
-	  grid-template-columns: auto !important;
-	  grid-template-rows: 1fr 2px 3fr 2px 3fr !important;
-  } */
-
   #demo {
     flex-direction: column !important;
     width: 100% !important;

@@ -1,5 +1,5 @@
 let consoleOpen = false;
-const mainDiv = document.getElementById('main')
+const mainDiv = document.getElementById('exampleMain')
 const exResult = document.getElementById('exampleResult')
 const exConsole = document.getElementById('exampleConsole')
 const stdoutDiv = exConsole.children[1];
