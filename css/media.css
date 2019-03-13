@@ -37,6 +37,10 @@
     margin: 10px !important;
   }
 
+  #content article p {
+	  padding: 0.55rem;
+  }
+
   #articles {
     display: block !important;
 	padding: 3.75rem 0.55rem !important;
@@ -129,6 +133,14 @@
 
   #info {
     flex-direction: column !important;
+  }
+
+  #content article.content-left {
+  	margin-right: 0 !important;
+  }
+
+  #content article.content-right {
+  	margin-left: 0 !important;
   }
 
   #events {
