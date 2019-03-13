@@ -476,6 +476,7 @@ body::-webkit-scrollbar {
   list-style: none;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   height: 100%;
   padding: 0;
   margin: 0;
@@ -517,7 +518,6 @@ body::-webkit-scrollbar {
 
 #galleryTitle li.active {
   display: flex;
-  flex: 1 1 auto;
   overflow: auto;
   min-height: 5rem;
 }
