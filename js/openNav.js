@@ -6,11 +6,11 @@ openNav = () => {
 
   if(window.getComputedStyle(navButton).display === 'none') return
 
-  if (opened) {
+  if (navOpened) {
     nav.style.width = 0
-    opened = false
+    navOpened = false
   } else {
     nav.style.width = "100%"
-    opened = true
+    navOpened = true
   }
 }
