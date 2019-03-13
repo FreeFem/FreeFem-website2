@@ -37,10 +37,6 @@
     margin: 10px !important;
   }
 
-  #content article p {
-	  padding: 0.55rem;
-  }
-
   #articles {
     display: block !important;
 	padding: 3.75rem 0.55rem !important;
@@ -54,10 +50,10 @@
     margin-right: 0 !important;
   }
 
-  .top-nav {
+  nav {
     width: 0;
     overflow: hidden;
-    flex-direction: column;
+    flex-direction: column !important;
     position: absolute;
     top: 3.75rem;
     background-color: #FFF;
@@ -65,7 +61,7 @@
     padding: 1.25rem 0;
   }
 
-  .top-nav a {
+  nav a {
     text-align: left !important;
     margin: 0 auto 0 3.75rem;
     padding: 0.75rem 0;
@@ -97,6 +93,11 @@
   #main {
     padding: 1.25rem !important;
   }
+
+  /* .main-tryit {
+	  grid-template-columns: auto !important;
+	  grid-template-rows: 1fr 2px 3fr 2px 3fr !important;
+  } */
 
   #demo {
     flex-direction: column !important;

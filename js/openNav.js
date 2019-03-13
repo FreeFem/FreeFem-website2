@@ -1,8 +1,8 @@
 let navOpened = false;
 
 openNav = () => {
-  const nav = document.getElementById('topNav')
-  const navButton = document.getElementById('nav-button')
+  const nav = document.getElementById('nav')
+  const navButton = document.getElementById('navButton')
 
   if(window.getComputedStyle(navButton).display === 'none') return
 
