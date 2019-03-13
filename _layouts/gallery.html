@@ -10,7 +10,7 @@
       <ul>
         <li>
           <div class="wrap">
-            <a href="{{ site.url }}{{ site.baseurl }}/gallery/meshAdaptation" onclick="fetchGallery(event, '{{ site.url }}{{ site.baseurl }}/gallery/meshAdaptation', 'Mesh adaptation'); activateGallery(this.parentNode.parentNode)">Mesh adaptation</a>
+            <a href="{{ site.url }}{{ site.baseurl }}/gallery/meshAdaptation" onclick="fetchGallery(event, '{{ site.url }}{{ site.baseurl }}/gallery/meshAdaptation', 'Mesh adaptation'); activateGallery(this.parentNode.parentNode)" id="galleryFirst">Mesh adaptation</a>
             <div>
               <p>FreeFem++ embeds a powerful 2D mesh adaptation algorithm.</p>
               <p>Mesh adaptation can be done <i>in-situ</i> during the simulation, as many times as necessary.</p>
@@ -92,6 +92,9 @@
 		const title = '{{ page.title }}'
 		history.pushState({url: url, title: title}, title, url)
 	}
+
+    const first = document.getElementById('galleryFirst')
+    first.click()
 	</script>
 </body>
 
