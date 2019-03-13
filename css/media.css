@@ -1,16 +1,18 @@
 /** FOR TABLETS **/
 @media screen and (max-width:1200px) {
-	/* #code {
-      width: 35% !important;
-      min-width: unset !important;
-  } */
-
-    /* #blank {
-      width: 65% !important;
-    } */
-
   #main {
     flex-direction: column !important;
+	padding: 1.875rem 0.55rem !important;
+  }
+
+  #code {
+	width: 35% !important;
+	height: unset !important;
+	min-width: unset !important;
+  }
+
+  #blank {
+	width: 65% !important;
   }
 
   #intro {
@@ -24,6 +26,7 @@
   #demo {
     order: 2;
     width: 100% !important;
+	justify-content: stretch;
   }
 
   #blank video {
@@ -36,6 +39,7 @@
 
   #articles {
     display: block !important;
+	padding: 3.75rem 0.55rem !important;
   }
 
   #articles article {
