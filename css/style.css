@@ -524,6 +524,7 @@ body::-webkit-scrollbar {
 
 #galleryTitle li.active a {
   color: #00007F;
+  padding: 0.55rem;
 }
 
 #galleryTitle li a:hover {
