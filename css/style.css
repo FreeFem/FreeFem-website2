@@ -848,6 +848,7 @@ body::-webkit-scrollbar {
 	color: white;
 	background-color: #00007F;
 	cursor: pointer;
+	padding: 0 0.25rem;
 }
 
 #codeArea {
@@ -1159,24 +1160,27 @@ body::-webkit-scrollbar {
 }
 
 #example2D {
-	flex: 1 1 auto;
-	justify-self: flex-end;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
+	margin: 0 0.55rem;
+	margin-top: auto;
+}
+
+#example2D i {
+	background-color: #FFF;
+	padding: 0.25rem;
+	font-size: 0.5rem;
+	cursor: pointer;
 }
 
 #example2D p {
 	padding: 0.55rem;
-	margin: 0.55rem;
 	color: grey;
-	background-color: #FFF;
 	text-align: center;
+	margin: 0;
+	background-color: #FFF;
 }
 
 #exampleGithub {
-	flex: 0 1 auto;
-	justify-self: flex-end;
+	margin-top: 1rem;
 }
 
 .header-github {
