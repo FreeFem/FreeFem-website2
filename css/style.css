@@ -839,6 +839,15 @@ body::-webkit-scrollbar {
   align-self: stretch;
   line-height: 1.25rem;
   border-bottom: .125rem solid #F7F7F9;
+  display: flex;
+  justify-content: space-between;
+}
+
+#exampleSave {
+	text-transform: uppercase;
+	color: white;
+	background-color: #00007F;
+	cursor: pointer;
 }
 
 #codeArea {

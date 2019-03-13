@@ -67,7 +67,7 @@
     </div>
     <div class="gutter" id="gutter1"></div>
     <div id="exampleCode" spellcheck="false">
-      <h2>Code</h2>
+      <h2>Code <span id="exampleSave" onclick="saveEDP(editor)">Save as EDP</span></h2>
 
       <textarea class="ffjs" id="code">mesh Th=square(10, 10, flags=2);
 plot(Th);
@@ -99,6 +99,7 @@ plot(u);</textarea>
           mode: "text/x-ff++src"
         })
       </script>
+	  <script async src="{{ site.url }}{{ site.baseurl }}/js/saveEDP.js"></script>
     </div>
     <div class="gutter" id="gutter2"></div>
     <div id="exampleResult">
