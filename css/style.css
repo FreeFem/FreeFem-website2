@@ -519,6 +519,7 @@ body::-webkit-scrollbar {
   display: flex;
   flex: 1 1 auto;
   overflow: auto;
+  min-height: 5rem;
 }
 
 #galleryTitle li.active a {
