@@ -239,4 +239,34 @@
   #galleryImg table {
 	  margin: 1rem;
   }
+
+  #exampleMain {
+	  grid-template-columns: 100% !important;
+	  grid-template-rows: 1fr 2px 3fr 2px 3fr auto !important;
+  }
+
+  #exampleScripts {
+    grid-column: 1/3 !important;
+    grid-row: 1 !important;
+  }
+
+  #gutter1 {
+    grid-column: 1/3 !important;
+    grid-row: 2 !important;
+  }
+
+  #exampleCode {
+    grid-column: 1/3 !important;
+    grid-row: 3 !important;
+  }
+
+  #exampleResult {
+    grid-column: 1/3 !important;
+    grid-row: 5 !important;
+  }
+
+  #exampleConsole {
+    grid-column: 1/3 !important;
+    grid-row: 6 !important;
+  }
 }
