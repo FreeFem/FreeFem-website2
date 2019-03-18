@@ -306,6 +306,7 @@ aside span {
 
 #articles h2 {
   font-size: 1.25rem;
+  line-height: 1.25rem;
 }
 
 #articles article {
@@ -588,6 +589,7 @@ body::-webkit-scrollbar {
 
 #ffdaysDesc h2 {
   font-size: 2rem;
+  line-height: 2rem;
 }
 
 #ffdaysDesc p {
@@ -634,6 +636,7 @@ body::-webkit-scrollbar {
 
 #ffdaysCal .days .day h2 {
   font-size: 80px;
+  line-height: 80px;
 }
 
 #ffdaysCal .days .program {
@@ -643,6 +646,7 @@ body::-webkit-scrollbar {
 
 #ffdaysCal .days .program h2 {
   font-size: 40px;
+  line-height: 40px;
   margin: 20px 0;
   font-weight: 900;
 }
