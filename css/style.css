@@ -289,14 +289,6 @@ aside span {
   column-gap: 2.625rem;
 }
 
-#articles a {
-  color: #444;
-}
-
-#articles a:hover {
-  color: #00007F;
-}
-
 #articles h1 {
   grid-row: 1;
   grid-column: 1/4;

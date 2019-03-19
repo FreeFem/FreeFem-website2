@@ -89,80 +89,77 @@ load "iovtk"
   </aside>
 
   <section id="content">
-	  <h1>Big title</h1>
-	  <article class="content-left">
-		  <h2>Sub title</h2>
-		  <p>
-		  Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
-	  	</p>
-	  </article>
-	  <article class="content-right">
-		  <h2>Sub title</h2>
-		  <p>
-		  Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
-	  	</p>
-	  </article>
-	  <article class="content-left">
-		  <h2>Sub title</h2>
-		  <p>
-		  Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
-	  	</p>
-	  </article>
+    <h1>Big title</h1>
+    <article class="content-left">
+      <h2>Sub title</h2>
+      <p>
+        Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des
+        morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les
+        années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+      </p>
+    </article>
+    <article class="content-right">
+      <h2>Sub title</h2>
+      <p>
+        Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des
+        morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les
+        années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+      </p>
+    </article>
+    <article class="content-left">
+      <h2>Sub title</h2>
+      <p>
+        Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des
+        morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les
+        années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+      </p>
+    </article>
   </section>
 
   <section id="articles">
     <h1>Latest Articles</h1>
     <article id="artFirst">
-      <a href="{{ site.data.articles.articles[0].link }}" target="_blank">
-        <p>{{ site.data.articles.articles[0].date | date: '%B %d, %Y' }} | {{ site.data.articles.articles[0].authors }}</p>
-        <h2>{{ site.data.articles.articles[0].title }}</h2>
-        <p>
-          {{ site.data.articles.articles[0].abstract }}
-        </p>
-      </a>
+      <p>{{ site.data.articles.articles[0].date | date: '%B %d, %Y' }} | {{ site.data.articles.articles[0].authors }}</p>
+      <h2><a href="{{ site.data.articles.articles[0].link }}" target="_blank">{{ site.data.articles.articles[0].title }}</a></h2>
+      <p>
+        {{ site.data.articles.articles[0].abstract }}
+      </p>
     </article>
     <article id="artSecond">
-      <a href="{{ site.data.articles.articles[1].link }}" target="_blank">
-        <p>{{ site.data.articles.articles[1].date | date: '%B %d, %Y' }} | {{ site.data.articles.articles[1].authors }}</p>
-        <h2>{{ site.data.articles.articles[1].title }}</h2>
-        <p>
-          {{ site.data.articles.articles[1].abstract }}
-        </p>
-      </a>
+      <p>{{ site.data.articles.articles[1].date | date: '%B %d, %Y' }} | {{ site.data.articles.articles[1].authors }}</p>
+      <h2><a href="{{ site.data.articles.articles[1].link }}" target="_blank">{{ site.data.articles.articles[1].title }}</a></h2>
+      <p>
+        {{ site.data.articles.articles[1].abstract }}
+      </p>
     </article>
     <article id="artThird">
-      <a href="{{ site.data.articles.articles[2].link }}" target="_blank">
-        <p>{{ site.data.articles.articles[2].date | date: '%B %d, %Y' }} | {{ site.data.articles.articles[2].authors }}</p>
-        <h2>{{ site.data.articles.articles[2].title }}</h2>
-        <p>
-          {{ site.data.articles.articles[2].abstract }}
-        </p>
-      </a>
+      <p>{{ site.data.articles.articles[2].date | date: '%B %d, %Y' }} | {{ site.data.articles.articles[2].authors }}</p>
+      <h2><a href="{{ site.data.articles.articles[2].link }}" target="_blank">{{ site.data.articles.articles[2].title }}</a></h2>
+      <p>
+        {{ site.data.articles.articles[2].abstract }}
+      </p>
     </article>
   </section>
 
   <section id="info">
     <section id="events">
       <h1>Events</h1>
-
       <div class="event-grid">
-        <div class="date">21 MARCH 2019</div>
-        <h2 class="title">Conference 1 - Paris</h2>
-        <p class="description">The 8th tutorial and Workshop on FreeFem++ (inscription here). Schedule, All Presentation, examples and directory this all data.
+        <div class="date">21-23 MAY 2019</div>
+        <h2 class="title"><a href='http://hpcse.it4i.cz/HPCSE19/' target='_blank'>HPCSE 2019 - Ostrava, Czech Republic</a></h2>
+        <p class="description">High Performance Computing in Science and Engineering
           <p />
       </div>
-
       <div class="event-grid">
-        <div class="date">22 AUGUST 2019</div>
-        <h2 class="title">Conference 2 - Paris</h2>
-        <p class="description">FreeFEM introduction conference
+        <div class="date">3-5 JUNE 2019</div>
+        <h2 class="title"><a href='https://congress.cimne.com/coupled201/' target='_blank'>COUPLED 2019 - Sitges (Barcelona)</a></h2>
+        <p class="description">Brain imaging with FreeFEM.
           <p />
       </div>
-
       <div class="event-grid">
-        <div class="date">23 SEPTEMBER 2019</div>
-        <h2 class="title">Conference 3 - Paris</h2>
-        <p class="description">FreeFEM introduction conference
+        <div class="date">19-21 JUNE 2019</div>
+        <h2 class="title"><a href='https://rmr2019.sciencesconf.org/' target='_blank'>Rencontre Mathématiques de Rouen</a></h2>
+        <p class="description">Introduction to FreeFEM version 4
           <p />
       </div>
     </section>

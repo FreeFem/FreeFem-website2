@@ -30,7 +30,7 @@ let stdout = document.getElementById('ffjs_stdout');
 let stdoutText = '';
 let stderrText = '';
 let stderr = document.getElementById('ffjs_stderr');
-let arrow =  document.getElementById('arrow');
+let arrow = document.getElementById('arrow');
 let arrowText = document.getElementById('arrow-text');
 let arrowSpinner = document.getElementById('arrow-spinner');
 let arrowReload = document.getElementById('arrow-reload');
@@ -111,9 +111,9 @@ function ffjs_evaluate() {
     ffjs_callcxx(ffjs_extract_script())
     console.log("ffjs_evaluate: FreeFem++ complete.")
 
-	//TODO buggy stuff
-	const ffjsGraph = document.getElementsByClassName('ffjs_graph')
-	ffjsGraph[0].style.height = 'unset'
+    //TODO buggy stuff
+    const ffjsGraph = document.getElementsByClassName('ffjs_graph')
+    ffjsGraph[0].style.height = 'unset'
 
     //console output
     stdout.innerHTML = stdoutText
@@ -124,6 +124,7 @@ function ffjs_evaluate() {
   }, 50);
 
 }
+
 
 // <<ffjs_listgraphs>> receives graph file names from [[file:util.cpp::listgraphs]] character by character when FF calls
 // [[file:~/ff/src/Graphics/sansrgraph.cpp::openPS]]
