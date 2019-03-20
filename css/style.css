@@ -250,11 +250,28 @@ aside span {
 }
 
 #content article {
-	display: block;
+	display: flex;
+  justify-content: stretch;
+  align-items: center;
 	padding: 1rem calc((100% - 1200px)/2);
-	margin-bottom: 1rem;
+  margin: 1rem calc((100% - 1000px)/2);
 	background-color: #F7F7F9;
 	text-align: justify;
+}
+
+#content .article-img {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content img {
+  width: 100px;
+}
+
+#content .article-text {
+  flex: 1;
 }
 
 #content article h2 {
@@ -265,9 +282,15 @@ aside span {
 	padding: 0.55rem;
 }
 
+#content article ul {
+  list-style-type: none;
+  list-style-image:  url("../img/angle-right-solid.svg");
+}
+
 #content article.content-left {
 	padding-right: 1rem;
-	margin-right: calc(50%/2);
+	margin-right: calc(40%/2);
+  padding-left: calc(40%/2);
 }
 
 #content article.content-left h2 {
@@ -276,7 +299,8 @@ aside span {
 
 #content article.content-right {
 	padding-left: 1rem;
-	margin-left: calc(50%/2);
+	margin-left: calc(40%/2);
+  padding-right: calc(40%/2);
 }
 
 /** ARTICLES **/

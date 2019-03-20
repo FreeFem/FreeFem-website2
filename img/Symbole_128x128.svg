@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="64mm"
-   height="64mm"
-   viewBox="0 0 64 64"
+   width="128mm"
+   height="128mm"
+   viewBox="0 0 128 128"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 5da689c313, 2019-01-14"
-   sodipodi:docname="Symbole.svg">
+   sodipodi:docname="Logo_v3.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="-63.034559"
-     inkscape:cy="271.12153"
+     inkscape:cx="-32.034559"
+     inkscape:cy="275.12153"
      inkscape:document-units="mm"
      inkscape:current-layer="g4647"
      showgrid="false"
@@ -52,13 +52,13 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-233)">
+     transform="translate(0,-169)">
     <g
        id="g4647"
        transform="matrix(1.4918831,0,0,1.4918831,-59.506182,-114.60876)">
       <g
          id="g1454"
-         transform="matrix(0.52498485,0,0,0.52498485,18.177339,130.87285)">
+         transform="matrix(1.0632024,0,0,1.0632024,-4.6198001,-17.267965)">
         <g
            id="g1420">
           <rect
