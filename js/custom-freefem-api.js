@@ -35,6 +35,14 @@ let arrowText = document.getElementById('arrow-text');
 let arrowSpinner = document.getElementById('arrow-spinner');
 let arrowReload = document.getElementById('arrow-reload');
 
+editor.on('change', function() {
+
+  // Show the run button again if the editor iss modified after the first execution
+  if (arrow.classList.contains('is-invisible')) {
+    arrow.classList.remove('is-invisible')
+    arrowText.classList.remove('is-invisible')
+  }
+})
 
 function ffjs_clear_stdout() {
   stdout.textContent = '';
