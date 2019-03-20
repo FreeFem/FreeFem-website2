@@ -1,4 +1,4 @@
 ---
-title: FREEFEM++ - Home
+title: FreeFEM - Home
 layout: index
 ---

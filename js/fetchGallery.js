@@ -41,7 +41,7 @@ function fetchGallery(e, url, title, disableHistory) {
 
 			// Set history
 			if (!disableHistory) history.pushState({url: url, title: title}, title, url)
-			document.title = "FREEFEM++ - " + title
+			document.title = "FreeFEM - " + title
 
 			// Relaunch MathJax
 			try{

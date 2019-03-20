@@ -1,4 +1,4 @@
 ---
-title: FREEFEM++ Days - Events
+title: FreeFEM Days - Events
 layout: ffdays
 ---

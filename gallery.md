@@ -1,4 +1,4 @@
 ---
-title: FREEFEM++ - Gallery
+title: FreeFEM - Gallery
 layout: gallery
 ---

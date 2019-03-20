@@ -1,4 +1,4 @@
 ---
-title: FREEFEM++ - Try it online
+title: FreeFEM - Try it online
 layout: tryit
 ---
